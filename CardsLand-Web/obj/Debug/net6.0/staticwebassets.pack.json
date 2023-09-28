@@ -1,0 +1,1341 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CardsLand-Web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CardsLand-Web.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-dark-rtl.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-dark-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-dark-rtl.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-dark-rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-dark-rtl.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-dark-rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-dark-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-dark-rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-dark.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-dark.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-dark.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-dark.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-dark.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-dark.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-dark.min.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-dark.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-rtl.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-rtl.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-rtl.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app-rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\app.min.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\app.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\bootstrap-dark.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\bootstrap-dark.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\bootstrap-dark.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\bootstrap-dark.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\bootstrap-dark.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\bootstrap-dark.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\bootstrap-dark.min.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\bootstrap-dark.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\icons.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\icons.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\icons.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\icons.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\icons.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\icons.min.css.map",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\icons.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\css\\metisMenu.min.css",
+      "PackagePath": "staticwebassets\\template\\assets\\css\\metisMenu.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\dripicons-v2.eot",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\dripicons-v2.eot"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\dripicons-v2.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\dripicons-v2.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\dripicons-v2.ttf",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\dripicons-v2.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\dripicons-v2.woff",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\dripicons-v2.woff"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\line-awesome.eot",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\line-awesome.eot"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\line-awesome.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\line-awesome.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\line-awesome.ttf",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\line-awesome.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\line-awesome.woff",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\line-awesome.woff"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\line-awesome.woff2",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\line-awesome.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\themify.eot"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\themify.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\themify.woff"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\typicons.eot",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\typicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\typicons.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\typicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\typicons.ttf",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\typicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\fonts\\typicons.woff",
+      "PackagePath": "staticwebassets\\template\\assets\\fonts\\typicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\1.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\404.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\404.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\500.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\bell.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\bell.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\cards\\card-1.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\cards\\card-1.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\cards\\card-2.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\cards\\card-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\cards\\card-3.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\cards\\card-3.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\cards\\card-4.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\cards\\card-4.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\close.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\flags\\french_flag.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\flags\\french_flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\flags\\germany_flag.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\flags\\germany_flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\flags\\italy_flag.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\flags\\italy_flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\flags\\russia_flag.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\flags\\russia_flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\flags\\spain_flag.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\flags\\spain_flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\flags\\us_flag.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\flags\\us_flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\logo-dark.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\logo-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\logo-sm.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\logo-sm.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\open.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\open.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\pattern.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\pattern.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\pattern2.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\pattern2.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\plus.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\plus.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\1.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\2.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\3.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\4.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\bg-cart.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\bg-cart.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\img-1.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\img-1.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\img-2.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\img-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\img-3.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\img-3.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\img-4.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\img-4.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\img-5.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\img-5.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\img-6.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\img-6.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\img-7.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\img-7.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\products\\offer.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\products\\offer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\signature.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\signature.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\ex-card.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\ex-card.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\img-1.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\img-2.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\img-3.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\img-4.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\img-5.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\img-6.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\img-7.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\img-8.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\sm-1.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\sm-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\sm-2.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\sm-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\small\\sm-3.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\small\\sm-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-1.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-1.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-1.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-10.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-2.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-2.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-3.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-3.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-3.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-4.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-4.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-4.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-5.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-5.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-5.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-6.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-7.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-8.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\users\\user-9.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\users\\user-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\calendar.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\calendar.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\login.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\login.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\monthly-re.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\monthly-re.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\notify.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\notify.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\p-1.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\p-1.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\p-2.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\p-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\p-3.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\p-3.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\p-4.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\p-4.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\p-5.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\p-5.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\p-6.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\p-6.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\project1.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\project1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\project2.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\project2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\project3.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\project3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\project4.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\project4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\sales-re.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\sales-re.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\w-1.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\w-1.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\w-2.svg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\w-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\images\\widgets\\weather.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\widgets\\weather.png"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\feather.min.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\feather.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\jquery.core.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\jquery.core.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\jquery.slimscroll.min.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\jquery.slimscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\metismenu.min.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\metismenu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\simplebar.min.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\simplebar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\js\\waves.js",
+      "PackagePath": "staticwebassets\\template\\assets\\js\\waves.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.analytics_dashboard.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.analytics_dashboard.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.animate.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.animate.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.apexcharts.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.apexcharts.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.calendar.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.calendar.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.chartjs.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.chartjs.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.clipboard.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.clipboard.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.crm_dashboard.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.crm_dashboard.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.datatable.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.datatable.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.dragula.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.dragula.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.flot.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.flot.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.form-editor.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.form-editor.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.form-repeater.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.form-repeater.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.form-upload.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.form-upload.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.form-wizard.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.form-wizard.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.form-xeditable.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.form-xeditable.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.forms-advanced.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.forms-advanced.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.gallery.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.gallery.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.gmaps.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.gmaps.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.helpdesk-dashboard.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.helpdesk-dashboard.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.idle-timer.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.idle-timer.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.jvectormap.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.jvectormap.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.morris.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.morris.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.nastable.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.nastable.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.profile.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.profile.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.projects_new.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.projects_new.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.projects_overview.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.projects_overview.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.projects_task.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.projects_task.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.rangeslider.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.rangeslider.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.rating.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.rating.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.responsive-table.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.responsive-table.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.rtl-apexcharts.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.rtl-apexcharts.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.sales_dashboard.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.sales_dashboard.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.sweet-alert.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.sweet-alert.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.tabledit.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.tabledit.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.timeout.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.timeout.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.treeview.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.treeview.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\pages\\jquery.validation.init.js",
+      "PackagePath": "staticwebassets\\template\\assets\\pages\\jquery.validation.init.js"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\_variables-dark.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\_variables-dark.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\app-dark-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\app-dark-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\app-dark.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\app-dark.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\app-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\app-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\app.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\app.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\bootstrap-dark.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\bootstrap-dark.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_alert.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_badge.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_buttons.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_card.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_form-advanced.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_form-advanced.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_form-editor.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_form-editor.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_form-validation.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_form-validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_form-wizard.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_form-wizard.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_forms.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_modals.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_modals.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_progress.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_reboot.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_switch.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_switch.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_tables.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_type.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\components\\_waves.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\components\\_waves.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\icons.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_account-pages.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_account-pages.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_analytics.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_analytics.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_avatar.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_avatar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_background-color.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_background-color.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_chat.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_chat.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_check-radio.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_check-radio.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_crm.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_crm.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_ecommerce.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_ecommerce.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_email.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_email.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_files.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_files.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_gallery.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_gallery.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_general.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_general.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_helpdesk.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_helpdesk.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_invoice.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_invoice.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_pricing.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_pricing.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_profile.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_profile.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_projects.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_projects.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\pages\\_timeline.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\pages\\_timeline.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_calendar.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_calendar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_charts.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_charts.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_custom-scrollbar.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_custom-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_dripicons.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_dripicons.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_feather.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_feather.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_fontawesome.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_fontawesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_line-awesome.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_line-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_maps.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_maps.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_materialdesignicons.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_materialdesignicons.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_nastable.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_nastable.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_rangeslider.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_rangeslider.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_sweet-alert.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_sweet-alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_themify-icons.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_themify-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\plugins\\_typicons.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\plugins\\_typicons.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_bootstrap-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_bootstrap-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_components-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_components-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_float-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_float-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_general-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_general-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_plugins-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_plugins-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_reboot-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_reboot-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_spacing-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_spacing-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_structure-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_structure-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\rtl\\_text-rtl.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\rtl\\_text-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\structure\\_dark-sidenav.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\structure\\_dark-sidenav.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\structure\\_footer.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\structure\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\structure\\_horizontal-nav.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\structure\\_horizontal-nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\structure\\_leftbar-tab.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\structure\\_leftbar-tab.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\structure\\_leftbar.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\structure\\_leftbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\structure\\_rightbar.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\structure\\_rightbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\wwwroot\\template\\assets\\scss\\structure\\_topbar.scss",
+      "PackagePath": "staticwebassets\\template\\assets\\scss\\structure\\_topbar.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CardsLand-Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.CardsLand-Web.props",
+      "PackagePath": "build\\CardsLand-Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CardsLand-Web.props",
+      "PackagePath": "buildMultiTargeting\\CardsLand-Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.CardsLand-Web.props",
+      "PackagePath": "buildTransitive\\CardsLand-Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
