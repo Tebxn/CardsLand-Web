@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ESTEBAN\\.nuget\\packages\\": {},
+    "C:\\Users\\valer\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\CardsLand-Web.csproj",
+      "projectUniqueName": "C:\\Users\\valer\\source\\repos\\CardsLand-Web\\CardsLand-Web\\CardsLand-Web.csproj",
       "projectName": "CardsLand-Web",
-      "projectPath": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\CardsLand-Web.csproj",
-      "packagesPath": "C:\\Users\\ESTEBAN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ESTEBAN\\OneDrive\\Ing Sistemas\\VII Cuat\\Progra Avanzada Web\\CardsLand-Web\\CardsLand-Web\\obj\\",
+      "projectPath": "C:\\Users\\valer\\source\\repos\\CardsLand-Web\\CardsLand-Web\\CardsLand-Web.csproj",
+      "packagesPath": "C:\\Users\\valer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\valer\\source\\repos\\CardsLand-Web\\CardsLand-Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ESTEBAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\valer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
