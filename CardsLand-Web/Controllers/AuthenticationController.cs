@@ -47,25 +47,25 @@ namespace CardsLand_Web.Controllers
                 return View();
             }
         }
-        [HttpGet]
-        public async Task<IActionResult> RegisterAccount()
-        {
-            try
-            {
-                var roleDropdownData = await _userModel.GetAllUsersRoles();
-                ViewBag.ListRoles = roleDropdownData.Data.Select(role => new SelectListItem
-                {
-                    Value = role.User_Type_Id.ToString(),
-                    Text = role.User_Type_Name
-                });
-                return View();
-            }
-            catch (Exception ex)
-            {
-                ViewBag.MensajePantalla = "Error al cargar los datos";
-                return View();
-            }
-        }
+        //[HttpGet] Se comenta metodo porque GetAllUsersRoles no existe aun
+        //public async Task<IActionResult> RegisterAccount()
+        //{
+        //    try
+        //    {
+        //        var roleDropdownData = await _userModel.GetAllUsersRoles();
+        //        ViewBag.ListRoles = roleDropdownData.Data.Select(role => new SelectListItem
+        //        {
+        //            Value = role.User_Type_Id.ToString(),
+        //            Text = role.User_Type_Name
+        //        });
+        //        return View();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        ViewBag.MensajePantalla = "Error al cargar los datos";
+        //        return View();
+        //    }
+        //}
 
         [HttpPost]
         public async Task<IActionResult> RegisterAccount(UserEnt entity)

@@ -13,4 +13,3 @@
         public bool User_Password_IsTemp { get; set; }
     }
 }
-}
