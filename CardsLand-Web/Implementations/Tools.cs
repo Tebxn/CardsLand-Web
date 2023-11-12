@@ -1,9 +1,10 @@
-﻿using System.Security.Cryptography;
+﻿using CardsLand_Web.Interfaces;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace CardsLand_Web.Implementations
 {
-    public class Tools
+    public class Tools : ITools
     {
         private readonly IConfiguration _configuration;
 

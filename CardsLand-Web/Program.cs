@@ -1,7 +1,20 @@
+using CardsLand_Web.Implementations;
+using CardsLand_Web.Interfaces;
+using CardsLand_Web.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddSession();
+
+builder.Services.AddSingleton<IUserModel, UserModel>();
+builder.Services.AddSingleton<ITools, Tools>();
+builder.Services.AddSingleton<IPokemonTcgModel, PokemonTcgModel>();
+
+
 
 var app = builder.Build();
 

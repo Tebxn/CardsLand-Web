@@ -9,7 +9,7 @@ namespace CardsLand_Web.Models
         private readonly HttpClient _httpClient;
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _HttpContextAccessor;
-        private String _urlApi;
+        private string _urlApi;
         private readonly ITools _tools;
 
 
