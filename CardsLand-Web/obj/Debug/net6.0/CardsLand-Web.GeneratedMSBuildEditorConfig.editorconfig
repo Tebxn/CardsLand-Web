@@ -24,10 +24,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cQXV0aDUwMC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Saul Hernandez/Desktop/Universidad/Github/ProyectoFinal_PokeLand/CardsLand-Web/CardsLand-Web/Views/Authentication/AuthLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cQXV0aExvZ2luLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Saul Hernandez/Desktop/Universidad/Github/ProyectoFinal_PokeLand/CardsLand-Web/CardsLand-Web/Views/Authentication/AuthRecoverPW.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cQXV0aFJlY292ZXJQVy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +38,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Saul Hernandez/Desktop/Universidad/Github/ProyectoFinal_PokeLand/CardsLand-Web/CardsLand-Web/Views/Deck/CreateDeck.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVja1xDcmVhdGVEZWNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Saul Hernandez/Desktop/Universidad/Github/ProyectoFinal_PokeLand/CardsLand-Web/CardsLand-Web/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Saul Hernandez/Desktop/Universidad/Github/ProyectoFinal_PokeLand/CardsLand-Web/CardsLand-Web/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Saul Hernandez/Desktop/Universidad/Github/ProyectoFinal_PokeLand/CardsLand-Web/CardsLand-Web/Views/Home/Index.cshtml]
