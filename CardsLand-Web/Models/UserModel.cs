@@ -23,7 +23,7 @@ namespace CardsLand_Web.Models
 
         }
 
-        public async Task<ApiResponse<UserEnt>> Login(UserEnt entity)
+        public async Task<ApiResponse<UserEnt>> Login(UserEnt entity) //Funciona
         {
             ApiResponse<UserEnt> response = new ApiResponse<UserEnt>();
 
