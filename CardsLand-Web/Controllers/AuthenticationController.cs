@@ -34,10 +34,7 @@ namespace CardsLand_Web.Controllers
             if (resp.Success)
             {
                 HttpContext.Session.SetString("UserId", resp.Data.User_Id.ToString());
-                HttpContext.Session.SetString("UserName", resp.Data.User_Name);
-                HttpContext.Session.SetString("UserName", resp.Data.User_LastName);
-                HttpContext.Session.SetString("UserCompanyId", resp.Data.User_Company_Id.ToString());
-              
+                HttpContext.Session.SetString("UserNickname", resp.Data.User_Nickname);
 
                 return RedirectToAction("Index", "Home");
             }

@@ -51,14 +51,12 @@ namespace CardsLand_Web.Models
             return response;
         }
 
-        public async Task<ApiResponse<UserEnt>> RegisterAccount(UserEnt entity)
+        public async Task<ApiResponse<UserEnt>> RegisterAccount(UserEnt entity) //no sirve
         {
             ApiResponse<UserEnt> response = new ApiResponse<UserEnt>();
 
             try
             {
-                entity.User_Company_Id = long.Parse(_HttpContextAccessor.HttpContext.Session.GetString("UserCompnayId"));
-
                 string url = _urlApi + "/api/Authentication/RegisterAccount";
                 string token = _HttpContextAccessor.HttpContext.Session.GetString("UserToken");
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);

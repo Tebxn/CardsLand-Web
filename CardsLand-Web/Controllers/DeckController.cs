@@ -12,7 +12,7 @@ namespace CardsLand_Web.Controllers
         [HttpGet]
         public IActionResult CreateDeck() 
         {
-            return View();
+            return View("CreateDeck");
         }
     }
 }
