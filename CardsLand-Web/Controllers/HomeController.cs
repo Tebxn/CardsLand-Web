@@ -15,7 +15,7 @@ namespace CardsLand_Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("Home");
         }
 
         public IActionResult Privacy()
@@ -23,6 +23,7 @@ namespace CardsLand_Web.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult About()
         {
             return View();
