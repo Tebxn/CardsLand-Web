@@ -1,0 +1,21 @@
+﻿@model CardsLand_Web.Entities.ApiResponse<CardsLand_Web.Entities.ApiResourceList<CardsLand_Web.Entities.CardEnt>>
+
+    @{
+        ViewData["Title"] = "GetAllCards";
+    }
+
+    @if (Model != null && Model.Data != null && Model.Data.Results != null)
+    {
+        foreach (var card in Model.Data.Results)
+        {
+            <div>
+                <img src="@card.CardImageUrl" alt="@card.CardName" />
+                <p>@card.CardName</p>
+            </div>
+        }
+    }
+    else
+    {
+        <p>Error al cargar las cartas: @Model?.ErrorMessage</p>
+    }
+

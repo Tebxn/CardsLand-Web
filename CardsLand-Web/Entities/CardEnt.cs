@@ -6,4 +6,6 @@
         public string CardName { get; set; } = string.Empty;
         public string CardImageUrl { get; set; } = string.Empty;
     }
+
+
 }
