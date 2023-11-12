@@ -9544,19 +9544,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\munoz\\.nuget\\packages\\": {}
+    "C:\\Users\\Saul Hernandez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\munoz\\Documents\\Ufide\\Progra web avanzada\\CardsLand-Web\\CardsLand-Web\\CardsLand-Web.csproj",
+      "projectUniqueName": "C:\\Users\\Saul Hernandez\\Desktop\\Universidad\\Github\\ProyectoFinal_PokeLand\\CardsLand-Web\\CardsLand-Web\\CardsLand-Web.csproj",
       "projectName": "CardsLand-Web",
-      "projectPath": "C:\\Users\\munoz\\Documents\\Ufide\\Progra web avanzada\\CardsLand-Web\\CardsLand-Web\\CardsLand-Web.csproj",
-      "packagesPath": "C:\\Users\\munoz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\munoz\\Documents\\Ufide\\Progra web avanzada\\CardsLand-Web\\CardsLand-Web\\obj\\",
+      "projectPath": "C:\\Users\\Saul Hernandez\\Desktop\\Universidad\\Github\\ProyectoFinal_PokeLand\\CardsLand-Web\\CardsLand-Web\\CardsLand-Web.csproj",
+      "packagesPath": "C:\\Users\\Saul Hernandez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Saul Hernandez\\Desktop\\Universidad\\Github\\ProyectoFinal_PokeLand\\CardsLand-Web\\CardsLand-Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\munoz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Saul Hernandez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9606,7 +9606,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -7,13 +7,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
-builder.Services.AddMvc();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddResponseCaching();
+builder.Services.AddSession();
 
+builder.Services.AddSingleton<IUserModel, UserModel>();
+builder.Services.AddSingleton<ITools, Tools>();
 builder.Services.AddSingleton<IPokemonTcgModel, PokemonTcgModel>();
 
-//builder.Services.AddSingleton<IUserModel, UserModel>();
+
+
+builder.Services.AddSingleton<IUserModel, UserModel>();
 
 var app = builder.Build();
 
@@ -37,3 +40,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+-----------------------------------------------------------------------------------
