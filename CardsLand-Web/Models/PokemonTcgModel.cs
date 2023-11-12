@@ -4,6 +4,7 @@ using System.Net.Http;
 using CardsLand_Web.Interfaces;
 using CardsLand_Web.Implementations;
 using Newtonsoft.Json;
+using System.ComponentModel;
 
 namespace CardsLand_Web.Models
 {
@@ -24,20 +25,20 @@ namespace CardsLand_Web.Models
 
         }
 
-        public async Task<ApiResponse<ApiResourceList<CardEnt>>> GetAllCards()
+        public async Task<ApiResponse<List<CardEnt>>> GetSpecificCardByName(string pokemonCardName)
         {
-            ApiResponse<ApiResourceList<CardEnt>> response = new ApiResponse<ApiResourceList<CardEnt>>();
+            ApiResponse<List<CardEnt>> response = new ApiResponse<List<CardEnt>>();
 
             try
             {
-                string url = $"{_urlApi}/api/PokemonTcg/GetAllCards";
+                string url = $"{_urlApi}/api/PokemonTcg/GetSpecificCardbyName/{pokemonCardName}";
 
                 HttpResponseMessage httpResponse = await _httpClient.GetAsync(url);
 
                 if (httpResponse.IsSuccessStatusCode)
                 {
                     string json = await httpResponse.Content.ReadAsStringAsync();
-                    response = JsonConvert.DeserializeObject<ApiResponse<ApiResourceList<CardEnt>>>(json);
+                    response = JsonConvert.DeserializeObject<ApiResponse<List<CardEnt>>>(json);
                     return response;
                 }
 
@@ -52,6 +53,7 @@ namespace CardsLand_Web.Models
                 return response;
             }
         }
+
 
     }
 

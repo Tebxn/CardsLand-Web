@@ -2,6 +2,7 @@
 using CardsLand_Web.Interfaces;
 using CardsLand_Web.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel;
 
 namespace CardsLand_Web.Controllers
 {
@@ -18,20 +19,30 @@ namespace CardsLand_Web.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllCards()
+        public async Task<IActionResult> GetSpecificCardByName(string pokemonCardName)
         {
             try
             {
-                var apiResponse = await _pokemonModel.GetAllCards();
-                var listcards = apiResponse.Data?.Results;
-                return View(listcards ?? new List<CardEnt>());
+                var apiResponse = await _pokemonModel.GetSpecificCardByName(pokemonCardName);
+
+                if (apiResponse.Success)
+                {
+                    var listCards = apiResponse.Data;
+                    return View("GetSpecificCardByName", listCards);
+                }
+                else
+                {
+                    return View("Error");
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                List<CardEnt> errors = new List<CardEnt>();
-                return View(errors);
+                // Log the exception if needed
+                return View("Error");
             }
         }
+
+
 
     }
 }

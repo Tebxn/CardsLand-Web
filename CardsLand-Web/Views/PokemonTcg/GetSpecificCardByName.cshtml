@@ -1,0 +1,47 @@
+﻿@model List<CardsLand_Web.Entities.CardEnt>
+
+@{
+    ViewData["Title"] = "GetSpecificCardByName";
+}
+
+<h2>Buscar Cartas por Nombre</h2>
+
+<form asp-action="GetSpecificCardByName" method="post">
+    <div class="mb-3">
+        <label for="pokemonCardName" class="form-label">Nombre de la Carta:</label>
+        <input type="text" class="form-control" id="pokemonCardName" name="pokemonCardName" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+
+@if (Model != null && Model.Count > 0)
+{
+    <!-- Sección de resultados -->
+    <section>
+        <h2>Resultados de la Búsqueda</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Card ID</th>
+                    <th>Card Name</th>
+                    <th>Card Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var card in Model)
+                {
+                    <tr>
+                        <td>@card.CardId</td>
+                        <td>@card.CardName</td>
+                        <td><img src="@card.CardImageUrl" alt="@card.CardName" style="max-width: 100px; max-height: 100px;" /></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+}
+else
+{
+    <p>No se encontraron cartas.</p>
+}
