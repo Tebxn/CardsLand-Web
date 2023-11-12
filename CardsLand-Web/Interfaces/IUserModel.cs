@@ -1,4 +1,5 @@
 ﻿using CardsLand_Web.Entities;
+using CardsLand_Web.Implementations;
 
 namespace CardsLand_Web.Interfaces
 {

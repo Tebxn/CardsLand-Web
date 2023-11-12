@@ -1,7 +1,12 @@
+using CardsLand_Web.Implementations;
+using CardsLand_Web.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSingleton<IUserModel, UserModel>();
 
 var app = builder.Build();
 
