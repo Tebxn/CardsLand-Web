@@ -24,29 +24,26 @@ namespace CardsLand_Web.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public async Task<IActionResult> Login(UserEnt entity)
-        {
+        //[HttpPost]
+        //public async Task<IActionResult> Login(UserEnt entity)
+        //{
 
-            var resp = await _userModel.Login(entity);
+        //    var resp = await _userModel.Login(entity);
 
 
-            if (resp.Success)
-            {
-                HttpContext.Session.SetString("UserId", resp.Data.User_Id.ToString());
-                HttpContext.Session.SetString("UserName", resp.Data.User_Name);
-                HttpContext.Session.SetString("UserName", resp.Data.User_LastName);
-                HttpContext.Session.SetString("UserCompanyId", resp.Data.User_Company_Id.ToString());
-              
+        //    if (resp.Success)
+        //    {
+        //        HttpContext.Session.SetString("UserId", resp.Data.User_Id.ToString());
+        //        HttpContext.Session.SetString("UserNickname", resp.Data.User_Nickname);
 
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
-                ViewBag.MensajePantalla = resp.ErrorMessage;
-                return View();
-            }
-        }
+        //        return RedirectToAction("Index", "Home");
+        //    }
+        //    else
+        //    {
+        //        ViewBag.MensajePantalla = resp.ErrorMessage;
+        //        return View();
+        //    }
+        //}
         //[HttpGet] Se comenta metodo porque GetAllUsersRoles no existe aun
         //public async Task<IActionResult> RegisterAccount()
         //{

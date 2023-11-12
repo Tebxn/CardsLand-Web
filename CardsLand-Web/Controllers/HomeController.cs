@@ -15,10 +15,16 @@ namespace CardsLand_Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("Home");
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult About()
         {
             return View();
         }

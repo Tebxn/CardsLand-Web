@@ -16,6 +16,8 @@ builder.Services.AddSingleton<IPokemonTcgModel, PokemonTcgModel>();
 
 
 
+builder.Services.AddSingleton<IUserModel, UserModel>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
