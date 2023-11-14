@@ -14,8 +14,6 @@ builder.Services.AddSingleton<IUserModel, UserModel>();
 builder.Services.AddSingleton<ITools, Tools>();
 builder.Services.AddSingleton<IPokemonTcgModel, PokemonTcgModel>();
 
-
-
 builder.Services.AddSingleton<IUserModel, UserModel>();
 
 var app = builder.Build();
@@ -40,4 +38,3 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
------------------------------------------------------------------------------------
