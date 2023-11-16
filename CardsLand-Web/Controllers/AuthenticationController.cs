@@ -24,60 +24,67 @@ namespace CardsLand_Web.Controllers
         {
             return View();
         }
-        //[HttpPost]
-        //public async Task<IActionResult> Login(UserEnt entity)
-        //{
 
-        //    var resp = await _userModel.Login(entity);
+        [HttpPost]
+        public async Task<IActionResult> Login(UserEnt entity)
+        {
+
+            var resp = await _userModel.Login(entity);
 
 
-        //    if (resp.Success)
-        //    {
-        //        HttpContext.Session.SetString("UserId", resp.Data.User_Id.ToString());
-        //        HttpContext.Session.SetString("UserNickname", resp.Data.User_Nickname);
+            if (resp.Success)
+            {
+                HttpContext.Session.SetString("UserId", resp.Data.User_Id.ToString());
+                HttpContext.Session.SetString("UserNickname", resp.Data.User_Nickname);
+                HttpContext.Session.SetString("UserToken", resp.Data.UserToken);
 
-        //        return RedirectToAction("Index", "Home");
-        //    }
-        //    else
-        //    {
-        //        ViewBag.MensajePantalla = resp.ErrorMessage;
-        //        return View();
-        //    }
-        //}
-        //[HttpGet] Se comenta metodo porque GetAllUsersRoles no existe aun
-        //public async Task<IActionResult> RegisterAccount()
-        //{
-        //    try
-        //    {
-        //        var roleDropdownData = await _userModel.GetAllUsersRoles();
-        //        ViewBag.ListRoles = roleDropdownData.Data.Select(role => new SelectListItem
-        //        {
-        //            Value = role.User_Type_Id.ToString(),
-        //            Text = role.User_Type_Name
-        //        });
-        //        return View();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        ViewBag.MensajePantalla = "Error al cargar los datos";
-        //        return View();
-        //    }
-        //}
+
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ViewBag.MensajePantalla = resp.ErrorMessage;
+                return View();
+            }
+        }
+
+        [HttpGet]
+        public IActionResult EndSession()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public IActionResult RegisterAccount()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> RegisterAccount(UserEnt entity)
         {
-            var apiResponse = await _userModel.RegisterAccount(entity);
+            try
+            {
+                var apiResponse = await _userModel.RegisterAccount(entity);
 
-            if (apiResponse.Success)
-            {
-                return RedirectToAction("Employees", "User");
+                if (apiResponse.Success)
+                {
+                    return RedirectToAction("Login", "Authentication");
+                }
+                else
+                {
+                    ViewBag.MensajePantalla = "No se pudo registrar la cuenta";
+                    return View();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ViewBag.MensajePantalla = "No se realizaron cambios";
+                ViewBag.MensajePantalla = "Error al cargar los datos";
                 return View();
             }
+
         }
         public IActionResult AuthRecoverPW()
         {

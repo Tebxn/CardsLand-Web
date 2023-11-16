@@ -36,20 +36,21 @@
                                     </div><!--end auth-logo-box-->
                                     
                                     <div class="text-center auth-logo-text">
-                                        <h4 class="mt-0 mb-3 mt-5">Free Register for Crovex</h4>
-                                        <p class="text-muted mb-0">Get your free Crovex account now.</p>  
+                                        <h4 class="mt-0 mb-3 mt-5">Pantalla de Registro</h4>
                                     </div> <!--end auth-logo-text-->  
     
                                     
                                   <form asp-action="RegisterAccount" asp-controller="Authentication" method="post" class="form-horizontal m-t-30">
-            
+
+                                    @ViewBag.MensajePantalla
+
                                         <div class="form-group">
-                                            <label for="username">Username</label>
+                                        <label for="nickname">Nickname</label>
                                             <div class="input-group mb-3">
                                                 <span class="auth-form-icon">
                                                     <i class="dripicons-user"></i> 
-                                                </span>                                                                                                              
-                                                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                                </span>
+                                            <input type="text" class="form-control" id="nickname" name="User_Nickname" placeholder="Digite un nickname que desea utilizar">
                                             </div>                                    
                                         </div><!--end form-group--> 
     
@@ -58,60 +59,31 @@
                                             <div class="input-group mb-3">
                                                 <span class="auth-form-icon">
                                                     <i class="dripicons-mail"></i> 
-                                                </span>                                                                                                              
-                                                <input type="email" class="form-control" id="useremail" placeholder="Enter Email">
+                                                </span>
+                                            <input type="email" class="form-control" id="useremail" name="User_Email" placeholder="Digite su correo electronico">
                                             </div>                                    
                                         </div><!--end form-group-->
             
                                         <div class="form-group">
-                                            <label for="userpassword">Password</label>                                            
+                                            <label for="userpassword">Contraseña</label>                                            
                                             <div class="input-group mb-3"> 
                                                 <span class="auth-form-icon">
                                                     <i class="dripicons-lock"></i> 
-                                                </span>                                                       
-                                                <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                                </span>
+                                            <input type="password" class="form-control" id="userpassword" name="User_Password" placeholder="Digite su contraseña">
                                             </div>                               
                                         </div><!--end form-group--> 
-    
-                                        <div class="form-group">
-                                            <label for="conf_password">Confirm Password</label>                                            
-                                            <div class="input-group mb-3"> 
-                                                <span class="auth-form-icon">
-                                                    <i class="dripicons-lock-open"></i> 
-                                                </span>                                                       
-                                                <input type="password" class="form-control" id="conf_password" placeholder="Enter Confirm Password">
-                                            </div>  
-                                            
-                                            <div class="form-group">
-                                                <label for="mo_number">Mobile Number</label>                                            
-                                                <div class="input-group mb-3"> 
-                                                    <span class="auth-form-icon">
-                                                        <i class="dripicons-phone"></i> 
-                                                    </span>                                                       
-                                                    <input type="text" class="form-control" id="mo_number" placeholder="Enter Mobile Number">
-                                                </div>                               
-                                            </div><!--end form-group--> 
-                                        </div><!--end form-group--> 
-            
-                                        <div class="form-group row mt-4">
-                                            <div class="col-sm-12">
-                                                <div class="custom-control custom-switch switch-success">
-                                                    <input type="checkbox" class="custom-control-input" id="customSwitchSuccess">
-                                                    <label class="custom-control-label text-muted" for="customSwitchSuccess">By registering you agree to the Frogetor <a href="#" class="text-primary">Terms of Use</a></label>
-                                                </div>
-                                            </div><!--end col-->                                             
-                                        </div><!--end form-group--> 
-            
-                                        <div class="form-group mb-0 row">
+
+                                    <div class="form-group mb-0 row">
                                             <div class="col-12 mt-2">
-                                                <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="button">Register <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                            <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="submit">Registrarse <i class="fas fa-sign-in-alt ml-1"></i></button>
                                             </div><!--end col--> 
                                         </div> <!--end form-group-->                           
                                     </form><!--end form-->
                                 </div><!--end /div-->
                                 
                                 <div class="m-3 text-center text-muted">
-                                    <p class="">Already have an account ? <a href="../authentication/auth-login.html" class="text-primary ml-2">Log in</a></p>
+                                <p class="">Ya tiene cuenta? <a href="@Url.Action("Login", "Authentication")" class="text-primary ml-2">Iniciar Sesion</a></p>
                                 </div>
                             </div><!--end card-body-->
                         </div><!--end card-->
@@ -135,7 +107,7 @@
 
     <!-- App js -->
         <script src="~/template/assets/js/app.js"></script>
-        
+
     </body>
 
 </html>

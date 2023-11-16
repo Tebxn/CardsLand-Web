@@ -8,5 +8,7 @@ namespace CardsLand_Web.Interfaces
 
         Task<ApiResponse<UserEnt>> Login(UserEnt entity);
         Task<ApiResponse<UserEnt>> RegisterAccount(UserEnt entity);
+        Task<ApiResponse<UserEnt>> GetSpecificUserFromToken(string userToken);
+
     }
 }
