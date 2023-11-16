@@ -1,5 +1,7 @@
 
 /*** Spinner Start ***/
+
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -753,18 +755,42 @@
 
 /*** Copywright Start ***/
 
-.copyright .copyright-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+
+/* Establecer el cuerpo y el HTML al 100% de altura */
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-.copyright .copyright-icon {
-    width: 44px; 
-    height: 44px; 
-    display: flex;
-    align-items: center; 
-    justify-content: center;
+body {
+    margin: 0;
 }
+
+
+/* Estilo del copyright */
+.copyright {
+    background-color: #343a40; /* Ajusta el color de fondo según tus preferencias */
+    color: #fff; /* Ajusta el color del texto según tus preferencias */
+    padding: 20px; /* Ajusta el relleno según tus preferencias */
+    margin-top: auto; /* Empuja el copyright hacia la parte inferior */
+}
+
+    .copyright .copyright-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright .copyright-icon {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 /*** Copywright End ***/
+.contenedor-principal {
+    height: 100vh;
+}

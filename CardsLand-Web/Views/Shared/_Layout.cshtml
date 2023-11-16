@@ -86,13 +86,13 @@
                 </button>
                 <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="@Url.Action("Index", "Home")" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">Expansions</a>
-                        <a href="service.html" class="nav-item nav-link">Cards</a>
+                        <a href="@Url.Action("Index", "Home")" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Expansiones</a>
+                        <a href="@Url.Action("GetSpecificCardByName", "PokemonTcg")" class="nav-item nav-link">Cartas</a>
                         <a href="project.html" class="nav-item nav-link">Decks</a>
                         <a href="@Url.Content("Home/About")" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                             <div class="dropdown-menu m-0 bg-primary">
                                 <a href="@Url.Action("Login", "Authentication")" class="dropdown-item">Iniciar Sesion</a>
                                 <a href="blog.html" class="dropdown-item">Blog Post</a>
@@ -101,7 +101,7 @@
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="@Url.Action("Login", "Authentication")" class="nav-item nav-link">Inciar Sesion</a>
                     </div>
                 </div>
             </nav>
@@ -111,7 +111,7 @@
     @RenderBody()
 
     <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
+   @*   <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
         <div class="container py-5">
             <div class="row g-4 footer-inner">
                 <div class="col-lg-3 col-md-6">
@@ -154,18 +154,22 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  *@
     <!-- Footer End -->
     <!-- Copyright Start -->
+
     <div class="container-fluid copyright bg-dark py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
 
-                    <h1 class="text-primary mb-0 display-5">
-                        <img src="~/template/img/pokemon_logo_PNG12.png" alt="Logo" width="80" height="auto">
-                        <span class="text-white">Cards</span><span class="text-danger">Land</span>
-                    </h1>
+                    <a href="@Url.Action("Index", "Home")">
+                        <h1 class="text-primary mb-0 display-5">
+                            <img src="~/template/img/pokemon_logo_PNG12.png" alt="Logo" width="80" height="auto">
+                            <span class="text-white">Cards</span><span class="text-danger">Land</span>
+                        </h1>
+                    </a>
+
                 </div>
                 <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
                     <a class="btn btn-primary rounded-circle me-3 copyright-icon bg-danger border-danger" href=""><i class="fab fa-facebook-f"></i></a>
@@ -197,6 +201,8 @@
 
     <!-- Template Javascript -->
     <script src="~/template/js/main.js"></script>
+
+
 </body>
 
 </html>
