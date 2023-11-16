@@ -17,9 +17,9 @@
                         <div class="container carousel-content">
                             <h4 class="text-white mb-4 animated slideInDown">Esta colección todo en uno tiene todo lo que necesitas para empezar a armar tus mazos</h4>
                             <h1 class="text-white display-1 mb-4 animated slideInDown">!Fácil de aprender, divertido de jugar¡</h1>
-                            <a href="" class="me-2">
+                            <a href="@Url.Action("Login", "Authentication")" class="me-2">
                                 <button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown bg-danger border-danger text-white">
-                                    Leer más
+                                    Iniciar Sesión
                                 </button>
                             </a>
                         </div>
@@ -31,9 +31,9 @@
                         <div class="container carousel-content">
                             <h4 class="text-white mb-4 animated slideInDown">Esta colección todo en uno tiene todo lo que necesitas para empezar a armar tus mazos</h4>
                             <h1 class="text-white display-1 mb-4 animated slideInDown">!Fácil de aprender, divertido de jugar¡</h1>
-                            <a href="" class="me-2">
+                            <a href="@Url.Action("Login", "Authentication")" class="me-2">
                                 <button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown bg-danger border-danger text-white">
-                                    Leer más
+                                    Iniciar Sesión
                                 </button>
                             </a>
                         </div>
@@ -101,16 +101,18 @@
                         <div class="rotate-left bg-dark"></div>
                         <div class="rotate-right bg-dark"></div>
                         <img src="template/img/PokemonFondo3.png" class="img-fluid h-110 w-110 mb-3" alt="img">
-                        <img src="template/img/PokemonFondo4.jpg" class="img-fluid h-110 w-110" alt="img">
+                        <img src="template/img/PokemonFondo9.jpg" class="img-fluid h-110 w-110" alt="img">
 
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".6s">
                     <div class="about-item overflow-hidden">
-                        <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Mazos</h5>
+                        <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Decks</h5>
                         <h1 class="display-5 mb-2">Arma y administra tus mazos de una forma fácil y divertida</h1>
                         <p class="fs-5" style="text-align: justify;">
-                            Podrás elegir entre más de 15 mil cartas: CardsLand brinda a los jugadores
+                            Podrás elegir entre más de 15 mil cartas:
+                             <br>
+                            CardsLand brinda a los jugadores
                             una herramienta accesible y amigable para armar y
                             administrar mazos de cartas de Pokémon, simplificando
                             un proceso que de otro modo podría ser complicado, pero con nosotros podrás aprender y disfrutar armar tus mazos.
@@ -158,7 +160,12 @@
                         </div>
                         </div>
                         </div> *@
-                        <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-5">Find Services</button>
+                    <br>
+                    <a href="@Url.Action("Login", "Authentication")" class="me-2">
+                        <button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown bg-danger border-danger text-white">
+                            Comenzar
+                        </button>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -169,60 +176,66 @@
     <div class="container-fluid services py-5">
         <div class="container text-center py-5">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Services</h5>
-                <h1 class="display-5">Common Pest Control Services</h1>
+                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Cartas</h5>
+                <h1 class="display-5">Categorías de cartas</h1>
             </div>
             <div class="row g-5">
                 <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="bg-light rounded p-5 services-item">
+                    <div class="bg-light rounded p-5">
                         <div class="d-flex" style="align-items: center; justify-content: center;">
                             <div class="mb-4 rounded-circle services-inner-icon">
-                                <i class="fa fa-spider fa-3x text-primary"></i>
+                                <img src="~/template/img/fuego.png" alt="Descripción de la imagen" width="50" height="50">
                             </div>
                         </div>
-                        <h4>Spiders</h4>
-                        <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisc elit sed.</p>
-                        <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        <h4>Fuego</h4>
+                        <p class="fs-5">Representa a los Pokémon de tipo Fuego, su color es el rojo y su símbolo es una llama. 
+                       </p>
+                     
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="bg-light rounded p-5 services-item">
+                    <div class="bg-light rounded p-5">
                         <div class="d-flex" style="align-items: center; justify-content: center;">
                             <div class="mb-4 rounded-circle services-inner-icon">
-                                <i class="fa fa-spider fa-3x text-primary"></i>
+                                <img src="~/template/img/agua.png" alt="Descripción de la imagen" width="50" height="50">
                             </div>
                         </div>
-                        <h4 class="text-center">Mosquitos</h4>
-                        <p class="text-center fs-5">Lorem ipsum dolor sit amet consectetur adipisc elit sed.</p>
-                        <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        <h4 class="text-center">Agua</h4>
+                    <p class="text-center fs-5">Representa a los Pokémon de tipo Agua y Hielo, su color es el azul y su símbolo una gota.</p>
+                      
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="bg-light rounded p-5 services-item">
+                     <div class="bg-light rounded p-5">
                         <div class="d-flex" style="align-items: center; justify-content: center;">
-                            <div class="mb-4 rounded-circle services-inner-icon">
-                                <i class="fa fa-spider fa-3x text-primary"></i>
-                            </div>
+                        <div class="mb-4 rounded-circle services-inner-icon">
+                            <img src="~/template/img/planta.png" alt="Descripción de la imagen" width="50" height="50">
                         </div>
-                        <h4 class="text-center">Rodents</h4>
-                        <p class="text-center fs-5">Lorem ipsum dolor sit amet consectetur adipisc elit sed.</p>
-                        <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                        <h4 class="text-center">Planta</h4>
+                        <p class="text-center fs-5">Representa a los Pokémon de tipo Planta y Bicho, 
+                        su color es el verde y su símbolo es una hoja.</p>
+                       
                     </div>
                 </div>
-                <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".9s">
-                    <div class="bg-light rounded p-5 services-item">
+                 <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="bg-light rounded p-5">
                         <div class="d-flex" style="align-items: center; justify-content: center;">
-                            <div class="mb-4 rounded-circle services-inner-icon">
-                                <i class="fa fa-spider fa-3x text-primary"></i>
-                            </div>
+                        <div class="mb-4 rounded-circle services-inner-icon">
+                            <img src="~/template/img/psiquico.png" alt="Descripción de la imagen" width="50" height="50">
                         </div>
-                        <h4 class="text-center">Termites</h4>
-                        <p class="text-center fs-5">Lorem ipsum dolor sit amet consectetur adipisc elit sed.</p>
-                        <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3">Learn More</button>
+                        </div>
+                        <h4 class="text-center">Psíquico</h4>
+                        <p class="text-center fs-5">Representa a los Pokémon de tipo Psíquico, Veneno y Fantasma, su color es el morado y su símbolo un ojo.</p>
+                       
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-4 wow fadeInUp" data-wow-delay=".3s">More Services</button>
+            <a href="@Url.Action("GetSpecificCardByName", "PokemonTcg")" class="me-2">
+                <button type="button" class="px-5 py-3 btn btn-primary border-2 rounded-pill animated slideInDown bg-danger border-danger text-white">
+                    Ver más
+                </button>
+            </a>
         </div>
     </div>
     <!-- Services End -->
@@ -230,56 +243,56 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Project</h5>
-                <h1 class="display-5">Our recently completed projects</h1>
+                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Top Pokemones</h5>
+                <h1 class="display-5">¿Cuál es tu pokemon favorito?</h1>
             </div>
             <div class="row g-5">
                 <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-left bg-dark"></div>
                         <div class="project-right bg-dark"></div>
-                        <img src="img/project-1.jpg" class="img-fluid h-100" alt="img">
-                        <a href="" class="fs-4 fw-bold text-center">Whole Home Sanitizing</a>
+                        <img src="template/img/eevee.jpg" class="img-fluid h-100" alt="img">
+                        <a href="" class="fs-4 fw-bold text-center">Eevee</a>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
                     <div class="project-item">
                         <div class="project-left bg-dark"></div>
                         <div class="project-right bg-dark"></div>
-                        <img src="img/project-2.jpg" class="img-fluid h-100" alt="img">
-                        <a href="" class="fs-4 fw-bold text-center">Education center Cleaning</a>
+                        <img src="template/img/charizard.jpg" class="img-fluid h-100" alt="img">
+                        <a href="" class="fs-4 fw-bold text-center">Charizard</a>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
                     <div class="project-item">
                         <div class="project-left bg-dark"></div>
                         <div class="project-right bg-dark"></div>
-                        <img src="img/project-3.jpg" class="img-fluid h-100" alt="img">
-                        <a href="" class="fs-4 fw-bold text-center">Warehouse Cleaning</a>
+                        <img src="template/img/pikachu.jpg" class="img-fluid h-100" alt="img">
+                        <a href="" class="fs-4 fw-bold text-center">Pikachu</a>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-left bg-dark"></div>
                         <div class="project-right bg-dark"></div>
-                        <img src="img/project-4.jpg" class="img-fluid h-100" alt="img">
-                        <a href="" class="fs-4 fw-bold text-center">Hospital Cleaning</a>
+                        <img src="template/img/squirtle.jpg" class="img-fluid h-100" alt="img">
+                        <a href="" class="fs-4 fw-bold text-center">Squirtle</a>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
                     <div class="project-item">
                         <div class="project-left bg-dark"></div>
                         <div class="project-right bg-dark"></div>
-                        <img src="img/project-5.jpg" class="img-fluid h-100" alt="img">
-                        <a href="" class="fs-4 fw-bold text-center">Factory Cleaning</a>
+                         <img src="template/img/bulbasaur.jpg" class="img-fluid h-100" alt="img">
+                         <a href="" class="fs-4 fw-bold text-center">Bulbasaur</a>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
                     <div class="project-item">
                         <div class="project-left bg-dark"></div>
                         <div class="project-right bg-dark"></div>
-                        <img src="img/project-6.jpg" class="img-fluid h-100" alt="img">
-                        <a href="" class="fs-4 fw-bold text-center">Furniture Sanitizing</a>
+                        <img src="template/img/PokemonFondo9.jpg" class="img-fluid h-100" alt="img">
+                         <a href="" class="fs-4 fw-bold text-center">Charmander</a>
                     </div>
                 </div>
             </div>
@@ -290,31 +303,28 @@
    
     <!-- Blog End -->
     <!-- Call To Action Start -->
-    <div class="container-fluid py-5 call-to-action wow fadeInUp" data-wow-delay=".3s" style="margin: 6rem 0;">
+     <div class="container-fluid py-5 call-to-action wow fadeInUp" data-wow-delay=".3s" style="margin: 6rem 0;">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-6">
-                    <img src="img/action.jpg" class="img-fluid w-100 rounded-circle p-5" alt="">
-                </div>
                 <div class="col-lg-6 my-auto">
                     <div class="text-start mt-4">
-                        <h1 class="pb-4 text-white">Sign Up To Our Newsletter To Get The Latest Offers</h1>
+                        <h1 class="pb-4 text-white">¡Comienza tu aventura pokemon!</h1>
                     </div>
                     <form method="post" action="index.html">
                         <div class="form-group">
                             <div class="d-flex call-btn">
-                                <input type="search" class="form-control py-3 px-4 w-100 border-0 rounded-0 rounded-end rounded-pill" name="search-input" value="" placeholder="Enter Your Email Address" required="Please enter a valid email" />
-                                <button type="email" value="Search Now!" class="btn btn-primary border-0 rounded-pill rounded rounded-start px-5">Subscribe</button>
+                                <input type="search" class="form-control py-3 px-4 w-100 border-0 rounded-0 rounded-end rounded-pill" name="search-input" value="" placeholder="Ingresa tu correo elétronico" required="Please enter a valid email" />
+                                <button type="email" value="Search Now!" class="btn btn-primary border-0 rounded-pill rounded rounded-start px-5">Iniciar Sesión</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- Call To Action End -->
     <!-- pricing Start -->
-    <div class="container-fluid py-5">
+   @*  <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
                 <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Pricing</h5>
@@ -380,10 +390,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> *@
     <!-- Pricing End -->
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+   @*  <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
                 <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Team</h5>
@@ -452,7 +462,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> *@
     <!-- Team End -->
     <!-- Testiminial Start -->
     
