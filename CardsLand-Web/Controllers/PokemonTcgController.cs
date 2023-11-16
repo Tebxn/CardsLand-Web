@@ -35,6 +35,21 @@ namespace CardsLand_Web.Controllers
             }
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAllCards()
+        {
+            try
+            {
+                var listCards = await _PokemonTcg.GetAllCards();
+
+                return View(listCards);
+            }
+            catch (Exception ex)
+            {
+                return View("Error");
+            }
+        }
+
 
 
     }
