@@ -759,14 +759,12 @@
 
 /* Establecer el cuerpo y el HTML al 100% de altura */
 html, body {
-    height: 100%;
     margin: 0;
 }
 
 body {
     margin: 0;
 }
-
 
 /* Estilo del copyright */
 .copyright {
