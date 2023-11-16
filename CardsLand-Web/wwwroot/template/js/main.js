@@ -96,3 +96,31 @@
 
 })(jQuery);
 
+      //Verify Fields Function
+
+        // Función para verificar el estado de los campos y habilitar/deshabilitar el botón
+        function verificarCampos() {
+            var nickname = $("#nickname").val();
+            var userEmail = $("#userEmail").val();
+            var userPassword = $("#userPassword").val();
+            var userPasswordConfirm = $("#userPasswordConfirm").val();
+
+            // Verificar si todos los campos están llenos y las contraseñas son iguales
+            if (nickname && userEmail && userPassword && userPassword === userPasswordConfirm) {
+                $("#btnRegister").prop("disabled", false);
+            } else {
+                $("#btnRegister").prop("disabled", true);
+            }
+        }
+
+function verificarCamposLogin() {
+    var email = $("#email").val();
+    var userPwd = $("#userpassword").val();
+    // Verificar si todos los campos están llenos y las contraseñas son iguales
+    if (email && userPwd) {
+        $("#btnLogin").prop("disabled", false);
+    } else {
+        $("#btnLogin").prop("disabled", true);
+    }
+}
+

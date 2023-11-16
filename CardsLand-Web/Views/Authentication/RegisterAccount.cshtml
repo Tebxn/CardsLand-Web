@@ -1,49 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <title>Crovex - Admin & Dashboard Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="" name="author" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="~/template/assets/images/favicon.ico">
-
-    <!-- App css -->
-    <link href="~/template/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/template/assets/css/jquery-ui.min.css" rel="stylesheet">
-    <link href="~/template/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/template/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/template/assets/css/app.min.css" rel="stylesheet" type="text/css" />
-
-    <script src="~/template/assets/js/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Función para verificar el estado de los campos y habilitar/deshabilitar el botón
-            function verificarCampos() {
-                var nickname = $("#nickname").val();
-                var userEmail = $("#userEmail").val();
-                var userPassword = $("#userPassword").val();
-                var userPasswordConfirm = $("#userPasswordConfirm").val();
-
-                // Verificar si todos los campos están llenos y las contraseñas son iguales
-                if (nickname && userEmail && userPassword && userPassword === userPasswordConfirm) {
-                    $("#btnRegister").prop("disabled", false);
-                } else {
-                    $("#btnRegister").prop("disabled", true);
-                }
-            }
-
-            // Configurar escuchadores de eventos en los campos relevantes
-            $("#nickname, #userEmail, #userPassword, #userPasswordConfirm").on("input", function () {
-                verificarCampos();
-            });
-        });
-    </script>
-</head>
 
 <body class="account-body accountbg">
 
@@ -110,7 +68,7 @@
 
                                     <div class="form-group mb-0 row">
                                         <div class="col-12 mt-2">
-                                            <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnRegister" disable type="submit">Registrarse <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                            <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnRegister" type="submit" onclick="verificarCampos()">Registrarse <i class="fas fa-sign-in-alt ml-1"></i></button>
                                         </div>
                                     </div> 
                                 </form>
@@ -126,16 +84,11 @@
         </div>
     </div>
  
-    <script src="~/template/assets/js/jquery.min.js"></script>
-    <script src="~/template/assets/js/jquery-ui.min.js"></script>
-    <script src="~/template/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="~/template/assets/js/metismenu.min.js"></script>
-    <script src="~/template/assets/js/waves.js"></script>
-    <script src="~/template/assets/js/feather.min.js"></script>
-    <script src="~/template/assets/js/jquery.slimscroll.min.js"></script>
+
 
     <!-- App js -->
     <script src="~/template/assets/js/app.js"></script>
+    <script src="~/template/js/main.js"></script>
 
 </body>
 
