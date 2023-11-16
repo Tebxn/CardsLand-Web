@@ -1,3 +1,5 @@
+using CardsLand_Api.Implementations;
+using CardsLand_Api.Interfaces;
 using CardsLand_Web.Implementations;
 using CardsLand_Web.Interfaces;
 using CardsLand_Web.Models;
@@ -12,7 +14,7 @@ builder.Services.AddSession();
 
 builder.Services.AddSingleton<IUserModel, UserModel>();
 builder.Services.AddSingleton<ITools, Tools>();
-builder.Services.AddSingleton<IPokemonTcgModel, PokemonTcgModel>();
+builder.Services.AddSingleton<IPokemonTcg, PokemonTcg>();
 
 builder.Services.AddSingleton<IUserModel, UserModel>();
 

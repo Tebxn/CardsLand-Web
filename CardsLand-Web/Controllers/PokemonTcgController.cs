@@ -1,4 +1,5 @@
-﻿using CardsLand_Web.Entities;
+﻿using CardsLand_Api.Interfaces;
+using CardsLand_Web.Entities;
 using CardsLand_Web.Interfaces;
 using CardsLand_Web.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -9,12 +10,12 @@ namespace CardsLand_Web.Controllers
     public class PokemonTcgController : Controller
     {
 
-        private readonly IPokemonTcgModel _pokemonModel;
         private readonly IHttpContextAccessor _HttpContextAccessor;
+        private readonly IPokemonTcg _PokemonTcg;
 
-        public PokemonTcgController(IPokemonTcgModel pokemonModel, IHttpContextAccessor httpContextAccessor)
+        public PokemonTcgController(IPokemonTcg pokemonTcg, IHttpContextAccessor httpContextAccessor)
         {
-            _pokemonModel = pokemonModel;
+            _PokemonTcg = pokemonTcg;
             _HttpContextAccessor = httpContextAccessor;
         }
 
@@ -23,21 +24,15 @@ namespace CardsLand_Web.Controllers
         {
             try
             {
-                var apiResponse = await _pokemonModel.GetSpecificCardByName(pokemonCardName);
+                var apiPokemon = await _PokemonTcg.GetSpecificCardbyName(pokemonCardName);
 
-                if (apiResponse.Success)
-                {
-                    var listCards = apiResponse.Data;
-                    return View("GetSpecificCardByName", listCards);
-                }
-                else
-                {
-                    return View("Error");
-                }
+                var listCards = apiPokemon.Results;
+
+                return View("GetSpecificCardByName", listCards);
+                //List<PokemonTcgSdk.Standard.Infrastructure.HttpClients.Cards.Card>
             }
             catch (Exception ex)
             {
-                // Log the exception if needed
                 return View("Error");
             }
         }
