@@ -396,3 +396,21 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+CardsLand-Web/obj/CardsLand-Web.csproj.nuget.dgspec.json
+CardsLand-Web/obj/CardsLand-Web.csproj.nuget.g.props
+CardsLand-Web/obj/Debug/net6.0/CardsLand-Web.assets.cache
+CardsLand-Web/obj/Debug/net6.0/CardsLand-Web.GeneratedMSBuildEditorConfig.editorconfig
+CardsLand-Web/obj/project.assets.json
+CardsLand-Web/obj/project.nuget.cache
+CardsLand-Web/obj/CardsLand-Web.csproj.nuget.dgspec.json
+CardsLand-Web/obj/CardsLand-Web.csproj.nuget.g.props
+CardsLand-Web/obj/Debug/net6.0/CardsLand-Web.assets.cache
+CardsLand-Web/obj/Debug/net6.0/CardsLand-Web.GeneratedMSBuildEditorConfig.editorconfig
+CardsLand-Web/obj/project.assets.json
+CardsLand-Web/obj/project.nuget.cache
+*.vsidx
+*.vsidx
+*.json
+*.props
+*.cache
+*.editorconfig
