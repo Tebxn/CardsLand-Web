@@ -11,12 +11,20 @@ namespace CardsLand_Api.Implementations
     {
         readonly PokemonApiClient pokeClient = new PokemonApiClient("6c488163-f020-49f7-829c-3bdb02c474f7");
 
-        public async Task<ApiResourceList<Card>> GetAllCards()
+        public async Task<List<CardEnt>> GetAllCards()
         {
+            List<CardEnt> listCards = new List<CardEnt>();
+            CardEnt cardEnt = new CardEnt();
+
             var filter = PokemonFilterBuilder.CreatePokemonFilter()
             .AddSetName("Base");
             var cards = await pokeClient.GetApiResourceAsync<Card>(filter);
-            return cards;
+            foreach (var x in cards.Results)
+            {
+                listCards.Add(cardEnt.ReturnCard(x.Id, x.Name, x.Images.Small.ToString()));
+            }
+
+            return listCards;
         }
 
         public async Task<List<CardEnt>> GetSpecificCardbyName(string pokemonCardName)
