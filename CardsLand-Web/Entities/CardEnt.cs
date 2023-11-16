@@ -1,19 +1,28 @@
-﻿namespace CardsLand_Web.Entities
+﻿using Newtonsoft.Json.Linq;
+using System.Data;
+
+namespace CardsLand_Web.Entities
 {
     public class CardEnt
     {
-        public string CardId { get; set; } = string.Empty; //example: 
-        public string CardName { get; set; } = string.Empty;
-        public string CardImageUrl { get; set; } = string.Empty;
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string ImageUrl { get; set; }
 
-        //Propiedades de las cartas consumidas por el API
-        public string? Id { get; set; } = string.Empty;
-        public string? Name { get; set; } = string.Empty;
-
-        public Uri Small { get; set; }
-
-        public Uri Large { get; set; }
+        public CardEnt ReturnCard(string id, string name, string image)
+        {
+            return new CardEnt
+            {
+                Id = id,
+                Name = name,
+                ImageUrl = image
+            };
+        }
     }
 
 
 }
+
+
+
+

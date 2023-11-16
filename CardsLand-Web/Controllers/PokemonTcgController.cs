@@ -24,9 +24,7 @@ namespace CardsLand_Web.Controllers
         {
             try
             {
-                var apiPokemon = await _PokemonTcg.GetSpecificCardbyName(pokemonCardName);
-
-                var listCards = apiPokemon.Results;
+                var listCards = await _PokemonTcg.GetSpecificCardbyName(pokemonCardName);
 
                 return View("GetSpecificCardByName", listCards);
                 //List<PokemonTcgSdk.Standard.Infrastructure.HttpClients.Cards.Card>
