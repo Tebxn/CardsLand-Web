@@ -2,6 +2,8 @@
 using CardsLand_Web.Interfaces;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
+using System.Net;
+using System.Data;
 
 namespace CardsLand_Web.Models
 {

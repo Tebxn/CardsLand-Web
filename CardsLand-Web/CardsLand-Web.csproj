@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
     <PackageReference Include="PokemonTcgSdk" Version="2.4.1" />

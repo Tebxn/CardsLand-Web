@@ -12,7 +12,6 @@ namespace CardsLand_Web.Controllers
         private readonly ILogger<AuthenticationController> _logger;
         private readonly IUserModel _userModel;
 
-
         public AuthenticationController(ILogger<AuthenticationController> logger, IUserModel userModel)
         {
             _logger = logger;
@@ -34,9 +33,17 @@ namespace CardsLand_Web.Controllers
 
             if (resp.Success)
             {
-                HttpContext.Session.SetString("UserId", resp.Data.User_Id.ToString());
-                HttpContext.Session.SetString("UserNickname", resp.Data.User_Nickname);
-                HttpContext.Session.SetString("UserToken", resp.Data.UserToken);
+                try
+                {
+                    HttpContext.Session.SetString("UserNickname", resp.Data.User_Nickname);
+                    HttpContext.Session.SetString("UserId", resp.Data.User_Id.ToString());
+                    HttpContext.Session.SetString("UserToken", resp.Data.UserToken);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                
 
 
                 return RedirectToAction("Index", "Home");

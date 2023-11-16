@@ -1,16 +1,20 @@
-using CardsLand_Api.Implementations;
-using CardsLand_Api.Interfaces;
+
 using CardsLand_Web.Implementations;
 using CardsLand_Web.Interfaces;
 using CardsLand_Web.Models;
+using CardsLand_Api.Implementations;
+using CardsLand_Api.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
+builder.Services.AddMvc();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddResponseCaching();
 builder.Services.AddSession();
+
 
 builder.Services.AddSingleton<IUserModel, UserModel>();
 builder.Services.AddSingleton<ITools, Tools>();
@@ -35,7 +39,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
