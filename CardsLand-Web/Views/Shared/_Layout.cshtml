@@ -27,6 +27,14 @@
     <link href="~/template/css/bootstrap.min.css" rel="stylesheet" />
 
 
+    <!-- Table Stylesheet -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- Template Stylesheet -->
     <link href="~/template/css/style.css" rel="stylesheet" />
 
@@ -90,7 +98,7 @@
                         <a href="about.html" class="nav-item nav-link">Expansiones</a>
                         <a href="@Url.Action("GetSpecificCardByName", "PokemonTcg")" class="nav-item nav-link">Cartas</a>
                         <a href="project.html" class="nav-item nav-link">Decks</a>
-                        <a href="@Url.Content("Home/About")" class="nav-item nav-link">About</a>
+                        <a href="@Url.Action("GetAllUsers","User")" class="nav-item nav-link">PokeTrainers</a>
                         <div class="nav-item dropdown">
                             @if (Context.Session.GetString("UserNickname") != null)
                             {
