@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Net;
 using System.Data;
+using NuGet.Common;
 
 namespace CardsLand_Web.Models
 {
@@ -83,16 +84,18 @@ namespace CardsLand_Web.Models
             }
         }
 
-        public async Task<ApiResponse<UserEnt>> GetSpecificUserFromToken(string userToken)
+        public async Task<ApiResponse<UserEnt>> GetSpecificUserFromToken()
         {
             ApiResponse<UserEnt> response = new ApiResponse<UserEnt>();
             try
             {
                 // Encripta el userToken antes de pasarlo en la URL
-                string encryptedUserToken = _tools.Encrypt(userToken);
+                //string encryptedUserToken = _tools.Encrypt(userToken);
+                string userToken = _HttpContextAccessor.HttpContext.Session.GetString("UserToken");
 
-                string url = $"{_urlApi}/api/Users/GetSpecificUserFromToken/{encryptedUserToken}";
+                string url = _urlApi + "/api/User/GetSpecificUserFromToken?q=" + userToken;
 
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", userToken);
                 HttpResponseMessage httpResponse = await _httpClient.GetAsync(url);
 
                 if (httpResponse.IsSuccessStatusCode)
@@ -101,10 +104,13 @@ namespace CardsLand_Web.Models
                     response = JsonConvert.DeserializeObject<ApiResponse<UserEnt>>(json);
                     return response;
                 }
-
-                response.ErrorMessage = "Error al obtener el usuario del API.";
-                response.Code = (int)httpResponse.StatusCode;
-                return response;
+                else
+                {
+                    response.ErrorMessage = "No se pudo concretar la solicitud";
+                    response.Code = (int)httpResponse.StatusCode;
+                    return response;
+                }
+               
             }
             catch (Exception ex)
             {

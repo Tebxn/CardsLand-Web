@@ -1,4 +1,5 @@
 ﻿using CardsLand_Web.Entities;
+using CardsLand_Web.Implementations;
 using CardsLand_Web.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -22,18 +23,18 @@ namespace CardsLand_Web.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetProfile(string userToken)
+        [SecurityFilter]
+        public async Task<IActionResult> GetProfile()
         {
             try
             {
-                var apiResponse = await _userModel.GetSpecificUserFromToken(userToken);
+                var apiResponse = await _userModel.GetSpecificUserFromToken();
 
                 if (apiResponse.Success)
                 {
                     var user = apiResponse.Data;
                     if (user != null)
                     {
-                        ViewBag.UserToken = userToken;
                         return View(user);
                     }
                     else
@@ -57,6 +58,7 @@ namespace CardsLand_Web.Controllers
 
 
         [HttpGet]
+
         public async Task<IActionResult> GetAllUsers()
         {
             try

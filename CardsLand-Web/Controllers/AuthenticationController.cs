@@ -1,4 +1,5 @@
 ﻿using CardsLand_Web.Entities;
+using CardsLand_Web.Implementations;
 using CardsLand_Web.Interfaces;
 using CardsLand_Web.Models;
 using Microsoft.AspNetCore.Http;
@@ -37,6 +38,7 @@ namespace CardsLand_Web.Controllers
                 {
                     HttpContext.Session.SetString("UserNickname", resp.Data.User_Nickname);
                     HttpContext.Session.SetString("UserId", resp.Data.User_Id.ToString());
+                    HttpContext.Session.SetString("UserIsAdmin", resp.Data.User_IsAdmin.ToString());
                     HttpContext.Session.SetString("UserToken", resp.Data.UserToken);
                 }
                 catch (Exception ex)
@@ -56,6 +58,7 @@ namespace CardsLand_Web.Controllers
         }
 
         [HttpGet]
+        [SecurityFilter]
         public IActionResult EndSession()
         {
             HttpContext.Session.Clear();
