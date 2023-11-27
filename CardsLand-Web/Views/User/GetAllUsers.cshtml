@@ -4,41 +4,78 @@
 }
 
 <!doctype html>
-	<body>
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">PokeTrainers!</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="table-wrap">
-						<table class="table table-responsive-xl">
-						  <thead>
-						    <tr>
-						    	<th>Nickname</th>
-								<th>Correo Electronico</th>
-								<th>Estado</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-							  @foreach(var x in Model){
-						    <tr>
-										<td>@x.User_Nickname</td>
-										<td>@x.User_Email</td>
-										<td>@x.User_State</td>
-						    
-						    </tr>
-							}
-						  </tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<body>
+    <div class="row align-items-center" style="background-image: url('/template/img/PokemonFondo9.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; margin-top: 0; height: 80vh;">
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center mb-5">
+                        <!-- Reducido el ancho de la columna -->
+                        <h2 class="heading-section">PokeTrainers!</h2>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-md-12" style="background-color: rgba(255, 255, 255, 0.3);">
+                        <div class="table-wrap">
+                            <table class="table table-responsive-xl" >
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" >Nickname</th>
+                                        <th class="text-center" >Correo Electronico</th>
+                                        <th class="text-center" >Estado</th>
+                                        <th class="text-center" >Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var x in Model)
+                                    {
+                                        <tr>
+                                            <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">@x.User_Nickname</td>
+                                            <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">@x.User_Email</td>
+                                            <td class="text-center"style="background-color: rgba(255, 255, 255, 0.3);">
+                                                @if (x.User_State)
+                                                {
+                                                    <span class="text-success">Activo</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-danger">Inactivo</span>
+                                                }
+                                            </td>
+                                            <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">
+                                                <a href="@Url.Action("EditSpecificUser", "User", new { UserId = x.User_Id })" class="btn btn-sm btn-primary">
+                                                    <!-- Agregado btn-sm para hacer el botón más pequeño -->
+                                                    Editar Usuario
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
 
-	</body>
+                                                @if (x.User_State)
+                                                {
+                                                    <form method="post" asp-action="DisableSpecificUser" asp-controller="User" class="d-inline">
+                                                        <input type="hidden" name="User_Id" value="@x.User_Id" />
+                                                        <button type="submit" class="btn btn-sm btn-danger">Desactivar Usuario</button> <!-- Agregado btn-sm para hacer el botón más pequeño -->
+                                                    </form>
+                                                }
+                                                else
+                                                {
+                                                    <form method="post" asp-action="ActivateAccount" asp-controller="User" class="d-inline">
+                                                        <input type="hidden" name="User_Id" value="@x.User_Id" />
+                                                        <button type="submit" class="btn btn-sm btn-success">Activar Usuario</button> <!-- Agregado btn-sm para hacer el botón más pequeño -->
+                                                    </form>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+
+
 </html>
