@@ -15,41 +15,46 @@
         <section class="ftco-section">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-4 text-center mb-5" style="background-color: rgba(255, 255, 255, 0.6); padding: 10px; border-radius: 10px;">
+                    <br>
+                    <div class="col-md-4 text-center mb-5" style="background-color: rgba(255, 255, 255, 0.6); padding: 10px; border-radius: 10px; color: #your_color;">
                         <h2 class="heading-section">PokeTrainers</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12" style="background-color: rgba(255, 255, 255, 0.3);">
+                    <div class="col-md-12" style="background-color: rgba(255, 255, 255, 0.3); color: black;">
                         <div class="table-wrap">
-                            <table class="table table-responsive-xl">
+                            <table class="table table-responsive-xl table-bordered" style="border-radius: 10px;">
                                 <thead>
                                     <tr>
-                                        <th class="text-center">Nickname</th>
-                                        <th class="text-center">Correo Electronico</th>
-                                        <th class="text-center">Estado</th>
-                                        <th class="text-center">Acciones</th>
+                                        <th class="text-center" style="color: black; min-width: 150px;">Nickname</th>
+                                        <th class="text-center" style="color: black;">Correo Electronico</th>
+                                        <th class="text-center" style="color: black;">Estado</th>
+                                        <th class="text-center" style="color: black; min-width: 150px;">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach (var x in Model)
                                     {
-                                        <tr>
-                                            <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">@x.User_Nickname</td>
-                                            <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">@x.User_Email</td>
+                                        <tr style="height: 50px; border-radius: 10px;">
+                                            <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">
+                                                <span style="color: black;">@x.User_Nickname</span>
+                                            </td>
+                                            <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">
+                                                <span style="color: black;">@x.User_Email</span>
+                                            </td>
                                             <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">
                                                 @if (x.User_State)
                                                 {
-                                                    <span class="text-success">Activo</span>
+                                                    <span class="text-success" style="color: green;">Activo</span>
                                                 }
                                                 else
                                                 {
-                                                    <span class="text-danger">Inactivo</span>
+                                                    <span class="text-danger" style="color: red;">Inactivo</span>
                                                 }
                                             </td>
                                             <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">
                                                 <a href="@Url.Action("EditSpecificUser", "User", new { UserId = x.User_Id })" class="btn btn-sm btn-primary">
-                                                    Editar Usuario
+                                                    <span style="color: black;">Editar Usuario</span>
                                                     <i class="fa fa-pencil"></i>
                                                 </a>
 
@@ -79,14 +84,16 @@
         </section>
     </div>
 
-    <footer style="margin-top: auto;">
+    <footer style="margin-top: auto; color: #your_color;">
         <!-- Agrega aquí el código de tu footer -->
     </footer>
 
 </body>
 
+
+
 </html>
 
 
 
-</html>
+
