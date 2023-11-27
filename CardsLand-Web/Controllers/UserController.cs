@@ -94,14 +94,13 @@ namespace CardsLand_Web.Controllers
                 }
                 else
                 {
-                    // Maneja el caso en que la respuesta no sea exitosa
-                    return View("Error"); // Muestra una vista de error
+                    return View("Error"); 
                 }
             }
             catch (Exception ex)
             {
-                // Maneja el caso en que se produjo una excepción
-                return View("Error"); // Muestra una vista de error
+                
+                return View("Error"); 
             }
         }
 
