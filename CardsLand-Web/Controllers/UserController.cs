@@ -115,7 +115,7 @@ namespace CardsLand_Web.Controllers
                     var user = apiResponse.Data;
                     if (user != null)
                     {
-                
+
                         return View("EditSpecificUser", user);
                     }
                     else

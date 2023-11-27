@@ -4,26 +4,31 @@
 }
 
 <!doctype html>
-<body>
-    <div class="row align-items-center" style="background-image: url('/template/img/PokemonFondo9.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; margin-top: 0; height: 80vh;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Tus etiquetas de encabezado (head) aquí -->
+</head>
+<body style="margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-image: url('/template/img/PokemonFondo9.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+
+    <div style="flex: 1;">
         <section class="ftco-section">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 text-center mb-5">
-                        <!-- Reducido el ancho de la columna -->
-                        <h2 class="heading-section">PokeTrainers!</h2>
+                    <div class="col-md-4 text-center mb-5" style="background-color: rgba(255, 255, 255, 0.6); padding: 10px; border-radius: 10px;">
+                        <h2 class="heading-section">PokeTrainers</h2>
                     </div>
                 </div>
-                <div class="row" >
+                <div class="row">
                     <div class="col-md-12" style="background-color: rgba(255, 255, 255, 0.3);">
                         <div class="table-wrap">
-                            <table class="table table-responsive-xl" >
+                            <table class="table table-responsive-xl">
                                 <thead>
                                     <tr>
-                                        <th class="text-center" >Nickname</th>
-                                        <th class="text-center" >Correo Electronico</th>
-                                        <th class="text-center" >Estado</th>
-                                        <th class="text-center" >Acciones</th>
+                                        <th class="text-center">Nickname</th>
+                                        <th class="text-center">Correo Electronico</th>
+                                        <th class="text-center">Estado</th>
+                                        <th class="text-center">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -32,7 +37,7 @@
                                         <tr>
                                             <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">@x.User_Nickname</td>
                                             <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">@x.User_Email</td>
-                                            <td class="text-center"style="background-color: rgba(255, 255, 255, 0.3);">
+                                            <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">
                                                 @if (x.User_State)
                                                 {
                                                     <span class="text-success">Activo</span>
@@ -44,7 +49,6 @@
                                             </td>
                                             <td class="text-center" style="background-color: rgba(255, 255, 255, 0.3);">
                                                 <a href="@Url.Action("EditSpecificUser", "User", new { UserId = x.User_Id })" class="btn btn-sm btn-primary">
-                                                    <!-- Agregado btn-sm para hacer el botón más pequeño -->
                                                     Editar Usuario
                                                     <i class="fa fa-pencil"></i>
                                                 </a>
@@ -53,14 +57,14 @@
                                                 {
                                                     <form method="post" asp-action="DisableSpecificUser" asp-controller="User" class="d-inline">
                                                         <input type="hidden" name="User_Id" value="@x.User_Id" />
-                                                        <button type="submit" class="btn btn-sm btn-danger">Desactivar Usuario</button> <!-- Agregado btn-sm para hacer el botón más pequeño -->
+                                                        <button type="submit" class="btn btn-sm btn-danger">Desactivar Usuario</button>
                                                     </form>
                                                 }
                                                 else
                                                 {
                                                     <form method="post" asp-action="ActivateAccount" asp-controller="User" class="d-inline">
                                                         <input type="hidden" name="User_Id" value="@x.User_Id" />
-                                                        <button type="submit" class="btn btn-sm btn-success">Activar Usuario</button> <!-- Agregado btn-sm para hacer el botón más pequeño -->
+                                                        <button type="submit" class="btn btn-sm btn-success">Activar Usuario</button>
                                                     </form>
                                                 }
                                             </td>
@@ -74,7 +78,14 @@
             </div>
         </section>
     </div>
+
+    <footer style="margin-top: auto;">
+        <!-- Agrega aquí el código de tu footer -->
+    </footer>
+
 </body>
+
+</html>
 
 
 
