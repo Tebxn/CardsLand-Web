@@ -21,6 +21,7 @@ builder.Services.AddSingleton<ITools, Tools>();
 builder.Services.AddSingleton<IPokemonTcg, PokemonTcg>();
 
 builder.Services.AddSingleton<IUserModel, UserModel>();
+builder.Services.AddSingleton<IDeckModel, DeckModel>();
 builder.Services.AddSingleton<IAuthentication, AuthenticationModel>();
 
 var app = builder.Build();

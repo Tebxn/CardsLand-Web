@@ -1,4 +1,5 @@
 ﻿using CardsLand_Web.Interfaces;
+using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -15,7 +16,6 @@ namespace CardsLand_Web.Implementations
             _configuration = configuration;
             _hostingEnvironment = hostingEnvironment;
         }
-
 
         public string Encrypt(string texto)
         {
@@ -42,7 +42,6 @@ namespace CardsLand_Web.Implementations
                     }
                 }
             }
-
             return Convert.ToBase64String(array);
         }
 
