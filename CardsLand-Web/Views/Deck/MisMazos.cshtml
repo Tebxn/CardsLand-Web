@@ -1,0 +1,33 @@
+﻿@model IEnumerable<CardsLand_Web.Entities.DeckEnt>
+@{
+    ViewData["Title"] = "MisMazos";
+}
+
+<h1>MisMazos</h1>
+
+<body>
+
+
+    @foreach (var data in Model)
+    {
+        <div class="card mb-3 w-100" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="@data.Deck_Background_Image" class="img-fluid rounded-start h-100" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">@data.Deck_Name</h5>
+                        <p class="card-text">@data.Deck_Description</p>
+                        <br/>
+                        <a class="btn btn-primary">Editar Mazo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    }
+
+</body>
