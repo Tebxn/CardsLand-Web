@@ -29,8 +29,8 @@ namespace CardsLand_Web.Implementations
 
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-
-            if (context.HttpContext.Session.GetString("UserIsAdmin") != "true")
+            string var = context.HttpContext.Session.GetString("UserIsAdmin");
+            if (var != "True")
             {
                 context.Result = new RedirectToRouteResult(new RouteValueDictionary
                 {

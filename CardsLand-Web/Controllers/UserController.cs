@@ -58,6 +58,8 @@ namespace CardsLand_Web.Controllers
 
 
         [HttpGet]
+        [SecurityFilter]
+        [SecurityFilterIsAdmin]
 
         public async Task<IActionResult> GetAllUsers()
         {
@@ -75,6 +77,8 @@ namespace CardsLand_Web.Controllers
         }
 
         [HttpGet]
+        [SecurityFilter]
+        [SecurityFilterIsAdmin]
         public async Task<IActionResult> GetSpecificUser(long userId)
         {
             try
@@ -105,6 +109,8 @@ namespace CardsLand_Web.Controllers
         }
 
         [HttpGet]
+        [SecurityFilter]
+        [SecurityFilterIsAdmin]
         public async Task<IActionResult> EditSpecificUser(long userId)
         {
             try
@@ -139,6 +145,8 @@ namespace CardsLand_Web.Controllers
 
 
         [HttpPost]
+        [SecurityFilter]
+        [SecurityFilterIsAdmin]
         public async Task<IActionResult> EditSpecificUser(UserEnt user)
         {
             var apiResponse = await _userModel.EditSpecificUser(user);
