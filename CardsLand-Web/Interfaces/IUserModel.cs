@@ -12,6 +12,7 @@ namespace CardsLand_Web.Interfaces
         Task<ApiResponse<List<UserEnt>>> GetAllUsers();
         Task<ApiResponse<UserEnt>> GetSpecificUser(long userId);
         Task<ApiResponse<UserEnt>> EditSpecificUser(UserEnt entity);
+        Task<ApiResponse<UserEnt>> PwdRecovery(UserEnt entity);
 
     }
 }

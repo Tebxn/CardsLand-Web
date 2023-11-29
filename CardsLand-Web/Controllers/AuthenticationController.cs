@@ -96,6 +96,23 @@ namespace CardsLand_Web.Controllers
             }
 
         }
+
+        [HttpPost]
+        public async Task<IActionResult> AuthRecoverPW(UserEnt entity)
+        {
+            var resp = await _userModel.PwdRecovery(entity);
+
+            if (resp.Success)
+                //return RedirectToAction("EmailSent", "Authentication");
+                return RedirectToAction("Login", "Authentication");
+
+            else
+            {
+                ViewBag.MensajePantalla = resp.ErrorMessage;
+                return View();
+            }
+        }
+
         public IActionResult AuthRecoverPW()
         {
             return View();
