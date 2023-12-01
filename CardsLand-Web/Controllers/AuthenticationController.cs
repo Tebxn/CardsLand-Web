@@ -103,8 +103,7 @@ namespace CardsLand_Web.Controllers
             var resp = await _userModel.PwdRecovery(entity);
 
             if (resp.Success)
-                //return RedirectToAction("EmailSent", "Authentication");
-                return RedirectToAction("Login", "Authentication");
+                return RedirectToAction("Index", "Home");
 
             else
             {
@@ -117,6 +116,29 @@ namespace CardsLand_Web.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateNewPassword(UserEnt entity)
+        {
+            var resp = await _userModel.UpdateNewPassword(entity);
+
+            if (resp.Success)
+                return RedirectToAction("Login", "Authentication");
+
+            else
+            {
+                ViewBag.MensajePantalla = resp.ErrorMessage;
+                return View();
+            }
+        }
+
+        public IActionResult UpdateNewPassword(string q)
+        {
+            UserEnt entity = new UserEnt();
+            entity.SecuredId = q;
+            return View(entity);
+        }
+
         public IActionResult Auth404()
         {
             return View();
