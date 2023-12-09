@@ -46,8 +46,6 @@ namespace CardsLand_Web.Controllers
                 {
                     Console.WriteLine(ex.Message);
                 }
-                
-
 
                 return RedirectToAction("Index", "Home");
             }
@@ -147,6 +145,29 @@ namespace CardsLand_Web.Controllers
         public IActionResult Auth500()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult ActivateAccount(string q)
+        {
+            UserEnt entity = new UserEnt();
+            entity.SecuredId = q;
+            return View(entity);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ActivateAccount(UserEnt entity)
+        {
+            var resp = await _userModel.ActivateAccount(entity);
+
+            if (resp.Success)
+                return RedirectToAction("Login", "Authentication");
+
+            else
+            {
+                ViewBag.MensajePantalla = resp.ErrorMessage;
+                return View();
+            }
         }
     }
 }

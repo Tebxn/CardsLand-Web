@@ -14,6 +14,7 @@ namespace CardsLand_Web.Interfaces
         Task<ApiResponse<UserEnt>> EditSpecificUser(UserEnt entity);
         Task<ApiResponse<UserEnt>> PwdRecovery(UserEnt entity);
         Task<ApiResponse<UserEnt>> UpdateNewPassword(UserEnt entity);
+        Task<ApiResponse<UserEnt>> ActivateAccount(UserEnt entity);
 
     }
 }
