@@ -283,36 +283,34 @@ namespace CardsLand_Web.Models
 
         }
 
-        public async Task<ApiResponse<UserEnt>> ActivateAccount(UserEnt entity)
+        public async Task<ApiResponse<UserEnt>> UpdateUserState(UserEnt entity)
         {
             ApiResponse<UserEnt> response = new ApiResponse<UserEnt>();
 
             try
             {
-                string url = _urlApi + "/api/Authentication/ActivateAccount";
+                string url = _urlApi + "/api/Users/UpdateUserState";
                 JsonContent obj = JsonContent.Create(entity);
                 var httpResponse = await _httpClient.PutAsync(url, obj);
 
                 if (httpResponse.IsSuccessStatusCode)
                 {
                     response.Success = true;
-                    response = await httpResponse.Content.ReadFromJsonAsync<ApiResponse<UserEnt>>();
+                    response.Data = await httpResponse.Content.ReadFromJsonAsync<UserEnt>();
                     return response;
                 }
                 else
                 {
-                    response.ErrorMessage = "Error al autorizar acceso.";
+                    response.ErrorMessage = "Error al conectar con el servidor. Contacte con soporte.";
                     return response;
                 }
             }
             catch (Exception ex)
             {
-                response.ErrorMessage = "Error inesperado al autorizar acceso: " + ex.Message;
+                response.ErrorMessage = "Error inesperado al actualizar usuario: " + ex.Message;
                 return response;
             }
-
         }
-
     }
 }
 
