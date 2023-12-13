@@ -1,0 +1,35 @@
+﻿@model CardsLand_Web.Entities.DeckEnt
+@{
+    ViewData["Title"] = "My Deck";
+}
+<div class="row">
+    <div class="col-8">
+        <h1>@Model.Deck_Name</h1>
+    </div>
+    <div class="col-4">
+        <button class="btn-primary">Agregar Carta</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>@Model.Deck_Description</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <table>
+            <tr>
+                <th>Nombre de la carta</th>
+            </tr>
+            @foreach(var card in ViewBag.cards)
+            {
+                <tr>
+                    <td>@card.Card_Name</td>
+                </tr>
+                
+            }
+        </table>
+    </div>
+</div>
+
+
