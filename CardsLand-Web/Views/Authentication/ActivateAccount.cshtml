@@ -1,94 +1,60 @@
 @model CardsLand_Web.Entities.UserEnt
 
-<!DOCTYPE html>
-<html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Crovex - Admin & Dashboard Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-        <meta content="" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<body>
 
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="../assets/images/favicon.ico">
-
-        <!-- App css -->
-    <link href="~/template/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/template/assets/css/jquery-ui.min.css" rel="stylesheet">
-    <link href="~/template/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/template/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/template/assets/css/app.min.css" rel="stylesheet" type="text/css" />
-
-    </head>
-
-    <body class="account-body accountbg">
-
-        <!-- Log In page -->
-        <div class="container">
-            <div class="row vh-100 ">
-            <div class="col-12" style="margin-top: 100px;">
+    <!-- Log In page -->
+    <div class="container-fluid ">
+        <div class="row align-items-center" style="background-image: url('/template/img/pokemon-hd.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;  margin-top: 0; height: 80vh;">
+            <div class="col-3 mx-auto mt-5 mb-5 my-0">
                 <div class="auth-page">
-                        <div class="card auth-card shadow-lg">
-                            <div class="card-body">
-                                <div class="px-3">
+                    <div class="card auth-card shadow-lg mx-auto" style="background-color: rgba(255, 255, 255, 0.6); max-width: 550px;">
+                        <div class="card-body" style="">
+
+                            <div class="px-3">
                                 <div class="auth-logo-box text-center">
                                     <img src="/template/img/raichu.png" alt="Logo" width="150" height="auto" class="mx-auto d-block">
                                 </div><!--end auth-logo-box-->
-                                    
-                                    <div class="text-center auth-logo-text">
-                                        <p class="text-muted mb-0">Activación de Cuenta</p>  
-                                    </div> <!--end auth-logo-text-->  
-    
-                                    
+
+                                <div class="text-center auth-logo-text">
+                                    <h4 class="mt-0 mb-3 mt-5">Ven ¡vamos a capturarlos a todos!</h4>
+                                    <p class="text-muted mb-0">Ingresa el código enviado para activar tu cuenta</p>
+                                </div> <!--end auth-logo-text-->
+
+
                                 <form asp-action="ActivateAccount" asp-controller="Authentication" method="post" class="form-horizontal m-t-30">
 
                                     <div class="form-group">
                                         <input asp-for="SecuredId" class="form-control" type="hidden" />
                                     </div><!--end form-group-->
-                                        <div class="form-group">
-                                            <label for="useremail">Código de Activación:</label>
-                                            <div class="input-group mb-3">
-                                                <span class="auth-form-icon">
-                                                    <i class="dripicons-mail"></i> 
-                                                </span>
-                                            <input type="text" class="form-control" id="User_Activation_Code" name="User_Activation_Code" placeholder="Digite el código que se le envió por correo">
-                                            </div>                                    
-                                        </div><!--end form-group-->        
-            
-                                        
-                                        <div class="form-group mb-0 row">
-                                            <div class="col-12 mt-2">
-                                                <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="submit">Activar Cuenta <i class="fas fa-sign-in-alt ml-1"></i></button>
-                                            </div><!--end col--> 
-                                        </div> <!--end form-group-->                           
-                                    </form><!--end form-->
-                                </div><!--end /div-->
-
-                            </div><!--end card-body-->
-                        </div><!--end card-->
-                    </div><!--end auth-page-->
-                </div><!--end col-->           
-            </div><!--end row-->
-        </div><!--end container-->
-        <!-- End Log In page --> 
-
-        
+                                    <br />
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <span class="auth-form-icon">
+                                                <i class="dripicons-mail"></i>
+                                            </span>
+                                            <input type="text" class="form-control" id="User_Activation_Code" name="User_Activation_Code" placeholder="Digite el código">
+                                        </div>
+                                    </div><!--end form-group-->
 
 
-        <!-- jQuery  -->
-    <script src="~/template/assets/js/jquery.min.js"></script>
-    <script src="~/template/assets/js/jquery-ui.min.js"></script>
-    <script src="~/template/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="~/template/assets/js/metismenu.min.js"></script>
-    <script src="~/template/assets/js/waves.js"></script>
-    <script src="~/template/assets/js/feather.min.js"></script>
-    <script src="~/template/assets/js/jquery.slimscroll.min.js"></script>
+                                    <div class="form-group mb-0 row">
+                                        <div class="col-12 mt-2">
+                                            <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" type="submit">Activar Cuenta <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                        </div><!--end col-->
+                                    </div> <!--end form-group-->
+                                </form><!--end form-->
+                            </div><!--end /div-->
 
-    <!-- App js -->
-    <script src="~/template/assets/js/app.js"></script>
-        
-    </body>
 
-</html>
+                        </div><!--end /div-->
+
+                           
+                        </div><!--end card-body-->
+                    </div><!--end card-->
+                </div><!--end auth-page-->
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-fluid-->
+    <!-- End Log In page -->
+</body>

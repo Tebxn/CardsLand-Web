@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
 
 
-
-<body class="account-body accountbg">
+<body>
 
     <!-- Log In page -->
-    <div class="container">
-        <div class="row vh-100 ">
-            <div class="col-12 align-self-center">
-                <div class="auth-page">
-                    <div class="card auth-card shadow-lg">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="background-image: url('/template/img/pokemon-hd.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; margin-top: 0; height: 80vh;">
+            <div class="col-6 col-md-6 mx-auto mt-5 mb-5 my-0">
+                <div class=" mb-4 ">
+                    <div class="card auth-card shadow-lg mx-auto" style="background-color: rgba(255, 255, 255, 0.6); max-width: 550px;">
                         <div class="card-body">
+
                             <div class="px-3">
-                                <div class="auth-logo-box">
-                                    <a href="../dashboard/analytics-index.html" class="logo logo-admin"><img src="~/template/assets/images/logo-sm.png" height="55" alt="logo" class="auth-logo"></a>
-                                </div>
+                                <div class="auth-logo-box text-center">
+                                    <img src="/template/img/snorlax.png" alt="Logo" width="150" height="auto" class="mx-auto d-block">
+                                </div><!--end auth-logo-box-->
 
                                 <div class="text-center auth-logo-text">
-                                    <h4 class="mt-0 mb-3 mt-5">Pantalla de Registro</h4>
-                                </div> 
-
+                                    <h4 class="mt-0 mb-3 mt-5">Ven ¡vamos a capturarlos a todos!</h4>
+                                    <p class="text-muted mb-0">Registra tu cuenta</p>
+                                </div> <!--end auth-logo-text-->
 
                                 <form asp-action="RegisterAccount" asp-controller="Authentication" method="post" class="form-horizontal m-t-30">
 
@@ -66,30 +64,25 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group mb-0 row">
-                                        <div class="col-12 mt-2">
-                                            <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnRegister" type="submit" onclick="verificarCampos()">Registrarse <i class="fas fa-sign-in-alt ml-1"></i></button>
-                                        </div>
-                                    </div> 
+                                    <div class="form-group mb-0">
+                                        <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnRegister" type="submit" onclick="verificarCampos()">Registrarse <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                    </div>
                                 </form>
-                            </div>
 
-                            <div class="m-3 text-center text-muted">
-                                <p class="">Ya tiene cuenta? <a href="@Url.Action("Login", "Authentication")" class="text-primary ml-2">Iniciar Sesion</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- 
+                                <div class="m-3 text-center text-muted">
+                                    <p class="">Ya tiene cuenta? <a href="@Url.Action("Login", "Authentication")" class="text-primary ml-2">Iniciar Sesion</a></p>
+                                </div>
 
+                            </div><!--end /div-->
 
-    <!-- App js -->
-    <script src="~/template/assets/js/app.js"></script>
-    <script src="~/template/js/main.js"></script>
+                        </div><!--end card-body-->
 
+                    </div><!--end card-->
+                </div><!--end auth-page-->
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-fluid-->
+    <!-- End Log In page -->
 </body>
 
-</html>
+
