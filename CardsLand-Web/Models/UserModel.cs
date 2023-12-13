@@ -7,6 +7,7 @@ using System.Data;
 using NuGet.Common;
 using Azure;
 using static Dapper.SqlMapper;
+using System.Web;
 
 namespace CardsLand_Web.Models
 {
@@ -159,8 +160,10 @@ namespace CardsLand_Web.Models
             {
                 // Encripta el userId antes de pasarlo en la URL
                 string encryptedUserId = _tools.Encrypt(userId.ToString());
+                string encodedHashedId = HttpUtility.UrlEncode(encryptedUserId);
 
-                string url = $"{_urlApi}/api/User/GetSpecificUser/{encryptedUserId}";
+
+                string url = $"{_urlApi}/api/User/GetSpecificUser/{encodedHashedId}";
 
                 HttpResponseMessage httpResponse = await _httpClient.GetAsync(url);
 
