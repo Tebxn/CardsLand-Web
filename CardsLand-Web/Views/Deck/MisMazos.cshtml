@@ -20,7 +20,7 @@
                         <h5 class="card-title">@data.Deck_Name</h5>
                         <p class="card-text">@data.Deck_Description</p>
                         <br/>
-                        <a class="btn btn-primary">Editar Mazo</a>
+                        <a href="@Url.Action("EditDeck", "Deck", new { DeckId = @data.Deck_Id })" class="btn btn-primary">Editar Mazo</a>
                     </div>
                 </div>
             </div>

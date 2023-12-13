@@ -8,5 +8,6 @@ namespace CardsLand_Api.Interfaces
     {
         Task<List<CardEnt>> GetAllCards();
         Task<List<CardEnt>> GetSpecificCardbyName(string pokemonCardName);
+        Task<CardEnt> GetSpecificCardbyId(string pokemonCardId);
     }
 }

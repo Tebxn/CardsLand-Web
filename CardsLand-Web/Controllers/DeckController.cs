@@ -1,4 +1,5 @@
 ﻿using CardsLand_Web.Interfaces;
+using CardsLand_Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CardsLand_Web.Controllers
@@ -23,7 +24,7 @@ namespace CardsLand_Web.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> MisMazos() 
+        public async Task<IActionResult> MisMazos()
         {
             try
             {
@@ -57,7 +58,41 @@ namespace CardsLand_Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult CreateDeck() 
+        public async Task<IActionResult> EditDeck(long deckId)
+        {
+            try
+            {
+                var apiResponse = await _deckModel.GetSpecificDeck(deckId);
+                var cardsFromDeck = await _deckModel.GetCardsFromDeck(deckId);
+                ViewBag.cards = cardsFromDeck.Data;
+                if (apiResponse.Success)
+                {
+                    var data = apiResponse.Data;
+                    if (data != null)
+                    {
+
+                        return View("EditDeck", data);
+                    }
+                    else
+                    {
+                        ViewBag.MensajePantalla = apiResponse.ErrorMessage;
+                        return View("Mis Mazos");
+                    }
+                }
+                else
+                {
+                    ViewBag.MensajePantalla = apiResponse.ErrorMessage;
+                    return View();
+                }
+            }
+            catch (Exception ex)
+            {
+                return View();
+            }
+        }
+
+        [HttpGet]
+        public IActionResult CreateDeck()
         {
             return View("CreateDeck");
         }

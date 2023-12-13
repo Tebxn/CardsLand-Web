@@ -45,5 +45,28 @@ namespace CardsLand_Api.Implementations
 
             return listCards;
         }
+
+        public async Task<CardEnt> GetSpecificCardbyId(string pokemonCardId)
+        {
+            var filter = PokemonFilterBuilder.CreatePokemonFilter()
+                .AddId(pokemonCardId)
+                .AddSetName("Base");
+
+            var cards = await pokeClient.GetApiResourceAsync<Card>(filter);
+
+            if (cards.Results.Count > 0)
+            {
+                var firstCard = cards.Results[0];
+                return new CardEnt
+                {
+                    Id = firstCard.Id,
+                    Name = firstCard.Name,
+                    ImageUrl = firstCard.Images?.Small?.ToString()
+                };
+            }
+
+            return null;
+        }
+
     }
 }
