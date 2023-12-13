@@ -87,35 +87,38 @@
                         <img src="~/template/img/pokemon_logo_PNG12.png" alt="Logo" width="80" height="auto">
                         <span class="text-white">Cards</span><span class="text-danger">Land</span>
                     </h1>
-
                 </a>
                 <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars text-dark"></span>
                 </button>
-                <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="@Url.Action("Index", "Home")" class="nav-item nav-link active">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link">Expansiones</a>
-                        <a href="@Url.Action("GetAllCards", "PokemonTcg")" class="nav-item nav-link">Cartas</a>
-                        <a href="project.html" class="nav-item nav-link">Decks</a>
-                        <a href="@Url.Action("GetAllUsers","User")" class="nav-item nav-link">PokeTrainers</a>
-                        <div class="nav-item dropdown">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "Home")" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Expansiones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("GetAllCards", "PokemonTcg")" class="nav-link">Cartas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="project.html" class="nav-link">Decks</a>
+                        </li>
+                        <li class="nav-item dropdown">
                             @if (Context.Session.GetString("UserNickname") != null)
                             {
-                                <a class="nav-item nav-link" href="@Url.Action("GetProfile","User")">
-                                    <i class="ti-power-off text-primary"></i>
-                                    Perfil
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="ti-power-off text-primary"></i> Opciones
                                 </a>
-                                <a class="nav-item nav-link" href="@Url.Action("MisMazos","Deck")">
-                                    <i class="ti-power-off text-primary"></i>
-                                    Mis Mazos
-                                </a>
-                                <a class="nav-item nav-link" href="@Url.Action("EndSession","Authentication")">
-                                    <i class="ti-power-off text-primary"></i>
-                                    Cerrar Sesión
-                                </a>
-                                
-                                
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="@Url.Action("GetProfile","User")">Perfil</a>
+                                    <a class="dropdown-item" href="@Url.Action("MisMazos","Deck")">Mis Mazos</a>
+                                    @if (bool.TryParse(Context.Session.GetString("UserIsAdmin"), out var isAdmin) && isAdmin)
+                                    {
+                                        <a class="dropdown-item" href="@Url.Action("GetAllUsers","User")">PokeTrainers</a>
+                                    }
+                                </div>
                             }
                             else
                             {
@@ -124,20 +127,39 @@
                                     Iniciar Sesión
                                 </a>
                             }
+                        </li>
+                        @if (Context.Session.GetString("UserNickname") != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("EndSession","Authentication")">
+                                    <i class="ti-power-off text-primary"></i>
+                                    Cerrar Sesión
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <i class="ti-power-off text-primary"></i>
+                                  
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <i class="ti-power-off text-primary"></i>
 
-
-                        </div>
-                    </div>
-                    @if (Context.Session.GetString("UserNickname") != null)
-                    {
-                        <span href="#" class="nav-item nav-link"> ¡Bienvenido @Context.Session.GetString("UserNickname")!</span>
-
-                    }
-
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link"> ¡Bienvenido(a) @Context.Session.GetString("UserNickname")!</span>
+                            </li>
+                           
+                        }
+                    </ul>
                 </div>
+            </nav>
         </div>
-        </nav>
     </div>
+
+
     </div>
     <!-- Navbar End -->
     @RenderBody()
