@@ -1,4 +1,5 @@
-﻿using CardsLand_Web.Interfaces;
+﻿using CardsLand_Web.Entities;
+using CardsLand_Web.Interfaces;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
@@ -8,13 +9,15 @@ namespace CardsLand_Web.Implementations
     public class Tools : ITools
     {
         private readonly IConfiguration _configuration;
+        private readonly IError _error;
 
         private IHostEnvironment _hostingEnvironment;
 
-        public Tools(IConfiguration configuration, IHostEnvironment hostingEnvironment)
+        public Tools(IConfiguration configuration, IHostEnvironment hostingEnvironment, IError error)
         {
             _configuration = configuration;
             _hostingEnvironment = hostingEnvironment;
+            _error = error;
         }
 
         public string Encrypt(string texto)
@@ -67,6 +70,13 @@ namespace CardsLand_Web.Implementations
                     }
                 }
             }
+        }
+        public void AddError(string errorMessage)
+        { 
+            ErrorEnt errorEnt = new ErrorEnt();
+            errorEnt.ErrorMessage = errorMessage;
+            _error.AddError(errorEnt);
+
         }
     }
 }

@@ -52,6 +52,7 @@ namespace CardsLand_Web.Models
             }
             catch (Exception ex)
             {
+                _tools.AddError(ex.Message);
                 response.ErrorMessage = "Error inesperado al iniciar sesión: " + ex.Message;
             }
 
