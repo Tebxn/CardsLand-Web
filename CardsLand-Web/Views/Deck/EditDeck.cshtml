@@ -142,13 +142,45 @@
                     <div class="card shadow-sm" style="width: 18rem;">
                         <img src="@item.Card_Image_Url" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-center">@item.Card_Name</h5>
-                            <p>Cantidad: @item.Card_Quantity</p>
-                            @*  <p class="card-text">@item.Id</p> *@
-
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h5 class="card-title text-center">@item.Card_Name</h5>
+                                    <p>Cantidad: @item.Card_Quantity</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="button" style="border: none; background-color: transparent; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#detailsModal-@item.Card_Id">
+                                        <i class="far fa-trash-alt" style="color: darkred"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- MODAL 1-->
+                <div class="modal fade" id="detailsModal-@item.Card_Id" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content text-center">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="detailsModalLabel">Eliminar Mazo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>¿Seguro que desea eliminar la carta?</h5>
+                            </div>
+
+                            <div class="modal-footer">
+                                <form asp-action="DeleteCardFromDeck" asp-controller="Deck" method="post" class="form-horizontal m-t-30">
+                                    <input type="hidden" name="deckId" value="@Model.Deck.Deck_Id"/>
+                                    <input type="hidden" name="cardId" value="@item.Card_Id"/>
+                                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ... -->
+
             }
         </div>
 
