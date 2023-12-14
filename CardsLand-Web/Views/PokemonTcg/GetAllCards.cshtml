@@ -39,9 +39,33 @@
                         <div class="modal-body">
                             <!-- Aquí puedes agregar más detalles según sea necesario -->
                             <img src="@item.ImageUrl" class="img-fluid mb-3" alt="@item.Name">
-                            <p class="mb-0">ID: @item.Id</p>
-                            <p class="mb-0">Name: @item.Name</p>
-             
+                            <p class="mb-0">
+                                Name:
+                                <span class="badge badge-secondary p-2" style="background-color: #EE7006; color: #ffffff; font-size: 1em;">@item.Name</span>
+                            </p>
+                            <br>
+                            <p class="card-text">
+                                Tipo:
+                                @{
+                                    var tiposPokemon = string.Join(", ", item.Types);
+                                }
+                                <span class="badge badge-primary p-2" style="background-color: #3498db; color: #ffffff; font-size: 1em;">@tiposPokemon</span>
+                            </p>
+                            <!-- Mostrar habilidades -->
+                            <p class="mb-0">
+                                Habilidades:
+                                @if (item.Abilities != null && item.Abilities.Any())
+                                {
+                                    foreach (var ability in item.Abilities)
+                                    {
+                                        <span class="badge badge-secondary p-2 mb-2" style="background-color: #FFDA1C; color: #ffffff; font-size: 1em;">@ability.Name</span>
+                                    }
+                                }
+                                else
+                                {
+                                    <span class="badge badge-secondary p-2 mb-2" style="background-color: #FFDA1C; color: #ffffff; font-size: 1em;">No hay habilidades</span>
+                                }
+                            </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

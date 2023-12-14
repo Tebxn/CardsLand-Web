@@ -4,6 +4,7 @@ using PokemonTcgSdk.Standard.Features.FilterBuilder.Pokemon;
 using PokemonTcgSdk.Standard.Infrastructure.HttpClients;
 using PokemonTcgSdk.Standard.Infrastructure.HttpClients.Base;
 using PokemonTcgSdk.Standard.Infrastructure.HttpClients.Cards;
+using PokemonTcgSdk.Standard.Infrastructure.HttpClients.Cards.Models;
 
 namespace CardsLand_Api.Implementations
 {
@@ -16,12 +17,18 @@ namespace CardsLand_Api.Implementations
             List<CardEnt> listCards = new List<CardEnt>();
             CardEnt cardEnt = new CardEnt();
 
-            var filter = PokemonFilterBuilder.CreatePokemonFilter()
-            .AddSetName("Base");
+            var filter = PokemonFilterBuilder.CreatePokemonFilter().AddSetName("Base");
             var cards = await pokeClient.GetApiResourceAsync<Card>(filter);
+
             foreach (var x in cards.Results)
             {
-                listCards.Add(cardEnt.ReturnCard(x.Id, x.Name, x.Images.Small.ToString()));
+                List<string> subtypes = x.Subtypes != null ? x.Subtypes.ToList() : new List<string>();
+                List<string> types = x.Types != null ? x.Types.ToList() : new List<string>();
+
+                // Obtener habilidades
+                List<Ability> abilities = x.Abilities != null ? x.Abilities.ToList() : new List<Ability>();
+
+                listCards.Add(cardEnt.ReturnCard(x.Id, x.Name, x.Images.Small.ToString(), subtypes, types, abilities));
             }
 
             return listCards;
@@ -40,7 +47,13 @@ namespace CardsLand_Api.Implementations
 
             foreach (var x in cards.Results)
             {
-                listCards.Add(cardEnt.ReturnCard(x.Id, x.Name, x.Images.Small.ToString()));
+                List<string> subtypes = x.Subtypes != null ? x.Subtypes.ToList() : new List<string>();
+                List<string> types = x.Types != null ? x.Types.ToList() : new List<string>();
+
+                // Obtener habilidades
+                List<Ability> abilities = x.Abilities != null ? x.Abilities.ToList() : new List<Ability>();
+
+                listCards.Add(cardEnt.ReturnCard(x.Id, x.Name, x.Images.Small.ToString(), subtypes, types, abilities));
             }
 
             return listCards;
