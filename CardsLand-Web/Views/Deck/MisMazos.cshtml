@@ -3,41 +3,51 @@
     ViewData["Title"] = "MisMazos";
 }
 
-<div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-            <h5>Mis Mazos</h5>
+<!DOCTYPE html>
+<html lang="en">
+<body style="margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-image: url('/template/img/PokemonFondo13.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="container mt-4">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-10 text-center mb-5" style="background-color: rgba(255, 255, 255, 0.4); padding: 10px; border-radius: 10px;">
+                <h1 class="mb-3">
+                    Inicia la Pokeaventura<br>
+                    Mis Mazos
+                </h1>
+            </div>
+            <div class="col-md-4 text-center">
+               
+            </div>
+         
         </div>
-        <div class="col-md-4 text-center">
-            <div class="bg-primary text-white p-2 rounded">
-                <a href="@Url.Action("CreateDeck", "Deck")">Crear nuevo mazo</a>
+
+        <div class="row justify-content-center">
+            <div class="text-center">
+                <a href="@Url.Action("CreateDeck", "Deck")" class="btn btn-primary">Crear nuevo mazo</a>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center mt-3">
-        @foreach (var data in Model)
-        {
-            <div class="card mb-3 w-100" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="@data.Deck_Background_Image" class="img-fluid rounded-start h-100" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">@data.Deck_Name</h5>
-                            <p class="card-text">@data.Deck_Description</p>
-                            <br />
-                            <a href="@Url.Action("EditDeck", "Deck", new { DeckId = @data.Deck_Id })" class="btn btn-primary">Editar Mazo</a>
+
+        <div class="row justify-content-center mt-3">
+            @foreach (var data in Model)
+            {
+                <div class="card mb-3" style="max-width: 500px; margin: 10px; border: 1px solid #e2e2e2; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-image: url(' /template/img/colorfondo3.jpg'); background-size: cover;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="@data.Deck_Background_Image" class="img-fluid rounded-start h-90" style="margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" alt="..." >
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">@data.Deck_Name</h5>
+                                <p class="card-text">@data.Deck_Description</p>
+                                <br />
+                                <a href="@Url.Action("EditDeck", "Deck", new { DeckId = @data.Deck_Id })" class="btn btn-primary">Editar Mazo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        }
+            }
+        </div>
+
     </div>
-</div>
+</body>
+</html>
 
-
-
-<!-- Scripts de Bootstrap 5 -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
