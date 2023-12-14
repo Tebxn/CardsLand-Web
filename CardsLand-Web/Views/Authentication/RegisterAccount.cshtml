@@ -64,9 +64,13 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group mb-0 text-center">
+                                    @* <div class="form-group mb-0 text-center">
                                         <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light text-center" id="btnRegister" type="submit" onclick="verificarCampos()">Registrarse <i class="fas fa-sign-in-alt ml-1"></i></button>
-                                    </div>
+                                    </div> *@
+
+                                    <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light text-center" id="btnRegister" type="submit" onclick="verificarCampos()" disabled>
+                                        Registrarse <i class="fas fa-sign-in-alt ml-1"></i>
+                                    </button>
                                 </form>
 
                                 <div class="m-3 text-center text-muted">
@@ -83,6 +87,36 @@
         </div><!--end row-->
     </div><!--end container-fluid-->
     <!-- End Log In page -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
+
+<script>
+    $(document).ready(function () {
+        $('#userPasswordConfirm').on('input', function () {
+            verificarCampos();
+        });
+
+        function verificarCampos() {
+            var password = $('#userPassword').val();
+            var confirmPassword = $('#userPasswordConfirm').val();
+
+            if (password === confirmPassword) {
+                // Contraseñas coinciden, habilita el botón y remueve la clase de error si estaba presente
+                $('#btnRegister').prop('disabled', false);
+                $('#userPasswordConfirm').removeClass('error');
+            } else {
+                // Contraseñas no coinciden, deshabilita el botón y agrega la clase de error
+                $('#btnRegister').prop('disabled', true);
+                $('#userPasswordConfirm').addClass('error');
+            }
+        }
+    });
+</script>
+
+<style>
+    .error {
+        border: 1px solid red;
+    }
+</style>
 
 
