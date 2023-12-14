@@ -58,11 +58,14 @@
                                                     <span style="color: black;">Editar Usuario</span>
                                                     <i class="fa fa-pencil"></i>
                                                 </a>
+                                                @{
+                                                    string buttonText = x.User_State ? "Desactivar" : "Activar";
+                                                    string buttonClass = x.User_State ? "btn btn-sm btn-danger" : "btn btn-sm btn-success";
+                                                }
 
-                                                <a href="@Url.Action("UpdateUserState", "User", new { UserId = x.User_Id })" class="btn btn-danger">
-                                                    Cambiar Estado
+                                                <a href="@Url.Action("UpdateUserState", "User", new { UserId = x.User_Id })" class="@buttonClass">
+                                                    @buttonText
                                                     <i class="fa fa-pencil"></i>
-
                                                 </a>
                                             </td>
                                         </tr>
