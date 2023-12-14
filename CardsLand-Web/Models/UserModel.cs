@@ -292,7 +292,7 @@ namespace CardsLand_Web.Models
 
             try
             {
-                string url = _urlApi + "/api/Users/UpdateUserState";
+                string url = _urlApi + "/api/User/UpdateUserState";
                 JsonContent obj = JsonContent.Create(entity);
                 var httpResponse = await _httpClient.PutAsync(url, obj);
 
