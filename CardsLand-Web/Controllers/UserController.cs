@@ -175,27 +175,6 @@ namespace CardsLand_Web.Controllers
             }
         }
 
-
-
-        //[HttpPost]
-        ////[SecurityFilter]
-        ////[SecurityFilterIsAdmin]
-        //public async Task<IActionResult> EditSpecificUser(UserEnt user)
-        //{
-        //    var apiResponse = await _userModel.EditSpecificUser(user);
-
-        //    if (apiResponse.Success)
-        //    {
-        //        var editedUser = apiResponse.Data;
-        //        return RedirectToAction("GetAllUsers", "User");
-        //    }
-        //    else
-        //    {
-        //        ViewBag.MensajePantalla = apiResponse.ErrorMessage;
-        //        return View();
-        //    }
-        //}
-
         [HttpPost]
         public async Task<IActionResult> EditSpecificUser(UserEnt user)
         {
@@ -219,36 +198,34 @@ namespace CardsLand_Web.Controllers
         [HttpGet]
         [SecurityFilter]
         [SecurityFilterIsAdmin]
-        [HttpGet]
         public async Task<IActionResult> UpdateUserState(long userId)
         {
             try
             {
-                // Obtener el usuario por su ID
+                
                 var apiResponse = await _userModel.GetSpecificUser(userId);
 
                 if (apiResponse.Success)
                 {
                     var user = apiResponse.Data;
 
-                    // Llamar al método en el modelo para actualizar el estado del usuario
+                    
                     var updateResponse = await _userModel.UpdateUserState(user);
 
                     if (updateResponse.Success)
                     {
-                        // Éxito al actualizar el estado del usuario
-                        return RedirectToAction("GetAllUsers", "User"); // Redirigir a la vista deseada después de la actualización
+                        return RedirectToAction("GetAllUsers", "User");
                     }
                     else
                     {
                         ViewBag.ErrorMessage = updateResponse.ErrorMessage;
-                        return View(); // Algo salió mal al cambiar el estado del usuario
+                        return  RedirectToAction("GetAllUsers", "User");
                     }
                 }
                 else
                 {
                     ViewBag.ErrorMessage = apiResponse.ErrorMessage;
-                    return View();
+                    return  RedirectToAction("GetAllUsers", "User");
                 }
             }
             catch (Exception ex)
@@ -258,23 +235,5 @@ namespace CardsLand_Web.Controllers
             }
         }
 
-        [HttpPost]
-        [SecurityFilter]
-        [SecurityFilterIsAdmin]
-        public async Task<IActionResult> UpdateUserState(UserEnt entity)
-        {
-
-            var apiResponse = await _userModel.UpdateUserState(entity);
-
-            if (apiResponse.Success)
-            {
-                return RedirectToAction("GetAllUsers", "User");
-            }
-            else
-            {
-                ViewBag.MensajePantalla = "No se realizaron cambios";
-                return View();
-            }
-        }
     }
 }
