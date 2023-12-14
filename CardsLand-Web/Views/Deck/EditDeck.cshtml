@@ -4,137 +4,159 @@
     ViewData["Title"] = "GetAllCards";
 }
 
-<div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-            <div class="bg-primary text-white p-2 rounded">
-                <h5>@Model.Deck.Deck_Name</h5>
-                <p>@Model.Deck.Deck_Description</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailsModal-@Model.Deck.Deck_Id">
+<!DOCTYPE html>
+<html lang="en">
+<body style="margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-image: url('/template/img/PokemonFondo12.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="container mt-4">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-10 text-center mb-5" style="background-color: rgba(255, 255, 255, 0.9); padding: 10px; border-radius: 10px;">
+                <h1 class="mb-3">
+                    <h5>@Model.Deck.Deck_Name</h5>
+                    <p>@Model.Deck.Deck_Description</p>
+                </h1>
+            </div>
+
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-md-10 mb-3">
+                <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#detailsModal-@Model.Deck.Deck_Id">
                     Editar Mazo
+                </button>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCardModal">
+                    Agregar Carta
                 </button>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center mt-3">
-        <!-- MODAL 1-->
-        <div class="modal fade" id="detailsModal-@Model.Deck.Deck_Id" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content text-center">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="detailsModalLabel">Editar Mazo: @Model.Deck.Deck_Name</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Aquí puedes agregar más detalles según sea necesario -->
-                        @using (Html.BeginForm("EditDeckValues", "Deck", FormMethod.Post))
-                        {
-                            @Html.HiddenFor(model => model.Deck.Deck_Id)
-                            @Html.HiddenFor(model => model.Deck.Deck_Background_Image)
 
-                            <div class="form-group">
-                                <label for="deckName">Nombre del mazo</label>
-                                <div class="input-group mb-3">
-                                    <span class="auth-form-icon">
-                                        <i class="dripicons-user"></i>
-                                    </span>
-                                    @Html.TextBoxFor(model => model.Deck.Deck_Name, new { @class = "form-control" })
+        <div class="row justify-content-center mt-3">
+            <!-- MODAL 1-->
+            <div class="modal fade" id="detailsModal-@Model.Deck.Deck_Id" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-center">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="detailsModalLabel">Editar Mazo: @Model.Deck.Deck_Name</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            @using (Html.BeginForm("EditDeckValues", "Deck", FormMethod.Post, new { @class = "needs-validation", novalidate = "true" }))
+                            {
+                                @Html.HiddenFor(model => model.Deck.Deck_Id)
+                                @Html.HiddenFor(model => model.Deck.Deck_Background_Image)
+
+                                <div class="form-group">
+                                    <label for="deckName">Nombre del mazo</label>
+                                    <br />
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="dripicons-user"></i>
+                                        </span>
+                                        @Html.TextBoxFor(model => model.Deck.Deck_Name, new { @class = "form-control", required = "required" })
+                                        <div class="invalid-feedback">
+                                            El nombre del mazo es obligatorio.
+                                        </div>
+                                    </div>
+                                    <br />
                                 </div>
-                            </div>
 
-                            <!--end form-group-->
+                                <div class="form-group">
+                                    <label for="deckDescription">Descripción</label>
 
-                            <div class="form-group">
-                                <label for="deckDescription">Descripcion</label>
-                                <div class="input-group mb-3">
-                                    <span class="auth-form-icon">
-                                        <i class="dripicons-lock"></i>
-                                    </span>
-                                    @Html.TextBoxFor(model => model.Deck.Deck_Description, new { @class = "form-control" }) <!--falta value-->
-
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="dripicons-lock"></i>
+                                        </span>
+                                        @Html.TextBoxFor(model => model.Deck.Deck_Description, new { @class = "form-control", required = "required" })
+                                        <div class="invalid-feedback">
+                                            La descripción del mazo es obligatoria.
+                                        </div>
+                                    </div>
+                                    <br/>
                                 </div>
-                            </div>
-                            <!--end form-group-->
 
-                            <div class="col-12 mt-2 text-center">
-                                <button class="btn btn-primary btn-rounded btn-block waves-effect waves-light mx-auto" id="btnEdit" name="btnEdit" type="submit">
-                                    Editar Mazo <i class="fas fa-sign-in-alt ml-1"></i>
-                                </button>
-                            </div> <!--end form-group-->
-                        }
+                                <div class="text-center">
+                                  
+                                    <button class="btn btn-primary btn-rounded" id="btnEdit" name="btnEdit" type="submit">
+                                        Guardar<i class="fas fa-sign-in-alt ml-1"></i>
+                                    </button>
+                                </div>
+                            }
+                        </div>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- ... -->
+
+         
+
+
+            <!-- MODAL 2-->
+            <div class="modal fade" id="addCardModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-center">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="detailsModalLabel">Agregar Carta</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Aquí puedes agregar más detalles según sea necesario -->
+                            @using (Html.BeginForm("AddCardToDeck", "Deck", FormMethod.Post, new { @class = "form-horizontal m-t-30" }))
+                            {
+                                @Html.HiddenFor(model => model.Deck.Deck_Id)
+                                <div class="form-group">
+                                    <label for="cardName">Nombre de la carta por agregar</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="dripicons-user"></i>
+                                        </span>
+                                        @Html.TextBoxFor(model => model.Card.Card_Name, new { @class = "form-control" })
+                                    </div>
+                                    <br />
+                                </div>
+
+                                <!--end form-group-->
+
+                                <div class="col-12 mt-2 text-center">
+                                    <button class="btn btn-primary btn-rounded btn-block waves-effect waves-light mx-auto" id="btnAdd" name="btnAdd" type="submit">
+                                        Agregar <i class="fas fa-sign-in-alt ml-1"></i>
+                                    </button>
+                                </div> <!--end form-group-->
+                            }
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ... -->
+            @foreach (var item in Model.CardList)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <img src="@item.Card_Image_Url" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">@item.Card_Name</h5>
+                            <p>Cantidad: @item.Card_Quantity</p>
+                            @*  <p class="card-text">@item.Id</p> *@
+
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
-        <!-- ... -->
 
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCardModal">
-            Agregar Carta
-        </button>
+        
 
-
-        <!-- MODAL 2-->
-        <div class="modal fade" id="addCardModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content text-center">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="detailsModalLabel">Agregar Carta</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Aquí puedes agregar más detalles según sea necesario -->
-                        @using (Html.BeginForm("AddCardToDeck", "Deck", FormMethod.Post, new { @class = "form-horizontal m-t-30" }))
-                        {
-                            @Html.HiddenFor(model => model.Deck.Deck_Id)
-
-                            <div class="form-group">
-                                <label for="cardName">Nombre de la carta por agregar</label>
-                                <div class="input-group mb-3">
-                                    <span class="auth-form-icon">
-                                        <i class="dripicons-user"></i>
-                                    </span>
-                                    @Html.TextBoxFor(model => model.Card.Card_Name, new { @class = "form-control" })
-                                </div>
-                            </div>
-
-                            <!--end form-group-->
-
-                            <div class="col-12 mt-2 text-center">
-                                <button class="btn btn-primary btn-rounded btn-block waves-effect waves-light mx-auto" id="btnAdd" name="btnAdd" type="submit">
-                                    Agregar <i class="fas fa-sign-in-alt ml-1"></i>
-                                </button>
-                            </div> <!--end form-group-->
-                        }
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ... -->
-        @foreach (var item in Model.CardList)
-        {
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <img src="@item.Card_Image_Url" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">@item.Card_Name</h5>
-                        <p>Cantidad: @item.Card_Quantity</p>
-                        @*  <p class="card-text">@item.Id</p> *@
-
-                    </div>
-                </div>
-            </div>
-        }
     </div>
-</div>
+</body>
+</html>
 
 <!-- Scripts de Bootstrap 5 -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
