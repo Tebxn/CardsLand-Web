@@ -30,7 +30,7 @@
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-user"></i>
                                             </span>
-                                            <input type="text" class="form-control" id="nickname" name="User_Nickname" placeholder="Digite un nickname que desea utilizar">
+                                            <input type="text" class="form-control" id="nickname" name="User_Nickname" placeholder="Digite un nickname que desea utilizar" required>
                                         </div>
                                     </div>
 
@@ -40,7 +40,7 @@
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-mail"></i>
                                             </span>
-                                            <input type="email" class="form-control" id="userEmail" name="User_Email" placeholder="Digite su correo electronico">
+                                            <input type="email" class="form-control" id="userEmail" name="User_Email" placeholder="Digite su correo electronico" required>
                                         </div>
                                     </div>
 
@@ -50,7 +50,7 @@
                                             <span class="auth-form-icon">
                                                 <i class="dripicons-lock"></i>
                                             </span>
-                                            <input type="password" class="form-control" id="userPassword" name="User_Password" placeholder="Digita tu contraseña">
+                                            <input type="password" class="form-control" id="userPassword" name="User_Password" placeholder="Digita tu contraseña" required>
                                         </div>
                                     </div>
 
@@ -64,13 +64,13 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group mb-0">
-                                        <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnRegister" type="submit" onclick="verificarCampos()">Registrarse <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                    <div class="form-group mb-0 text-center">
+                                        <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light text-center" id="btnRegister" type="submit" onclick="verificarCampos()">Registrarse <i class="fas fa-sign-in-alt ml-1"></i></button>
                                     </div>
                                 </form>
 
                                 <div class="m-3 text-center text-muted">
-                                    <p class="">Ya tiene cuenta? <a href="@Url.Action("Login", "Authentication")" class="text-primary ml-2">Iniciar Sesion</a></p>
+                                    <p class="">¿Ya tienes una cuenta? <a href="@Url.Action("Login", "Authentication")" class="text-dark ml-2">Iniciar Sesion</a></p>
                                 </div>
 
                             </div><!--end /div-->

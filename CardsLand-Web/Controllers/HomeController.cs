@@ -18,6 +18,11 @@ namespace CardsLand_Web.Controllers
             return View("Home");
         }
 
+        public IActionResult ActividadesParaImprimir()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
