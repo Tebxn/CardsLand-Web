@@ -10,8 +10,9 @@ namespace CardsLand_Api.Implementations
 {
     public class PokemonTcg : IPokemonTcg
     {
-        readonly PokemonApiClient pokeClient = new PokemonApiClient("6c488163-f020-49f7-829c-3bdb02c474f7");
 
+        //readonly PokemonApiClient pokeClient = new PokemonApiClient("6c488163-f020-49f7-829c-3bdb02c474f7");
+        readonly PokemonApiClient pokeClient = new PokemonApiClient("a6241879-2444-4b9a-a654-1583a39fbd8d");
         public async Task<List<CardEnt>> GetAllCards()
         {
             List<CardEnt> listCards = new List<CardEnt>();
@@ -72,9 +73,9 @@ namespace CardsLand_Api.Implementations
                 var firstCard = cards.Results[0];
                 return new CardEnt
                 {
-                    Id = firstCard.Id,
-                    Name = firstCard.Name,
-                    ImageUrl = firstCard.Images?.Small?.ToString()
+                    Card_Id = firstCard.Id,
+                    Card_Name = firstCard.Name,
+                    Card_Image_Url = firstCard.Images?.Small?.ToString()
                 };
             }
 

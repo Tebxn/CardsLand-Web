@@ -1,4 +1,6 @@
-﻿@{
+﻿@model CardsLand_Web.Entities.DeckEnt
+
+@{
     ViewData["Title"] = "Create Deck";
 }
 @section Styles {
@@ -13,22 +15,24 @@
 
 <!-- Formulario -->
 <div class="container form-container">
-    <form>
+    <form asp-action="CreateDeck" asp-controller="Deck" method="post" class="form-horizontal m-t-30">
         <div class="mb-3">
             <label for="nombreDeck" class="form-label">Nombre del deck</label>
-            <input type="text" class="form-control" id="nombreDeck" placeholder="Ingresa el nombre del deck">
+            <input type="text" class="form-control" id="nombreDeck" name="Deck_Name" placeholder="Ingresa el nombre del deck">
         </div>
 
         <div class="mb-3">
             <label for="portadaDeck" class="form-label">Carta de portada</label>
-            <input type="text" class="form-control" placeholder="Pokemon de portada" aria-label="portadaDeck" aria-describedby="button-addon2">
+            <input type="text" class="form-control" name="Deck_Background_Image" placeholder="Pokemon de portada" aria-label="portadaDeck" aria-describedby="button-addon2">
         </div>
 
 
         <div class="mb-3">
             <label for="descripcionDeck" class="form-label">Descripcion</label>
-            <textarea class="form-control" id="descripcionDeck" rows="4" placeholder="Ingresa una descripcion"></textarea>
+            <textarea class="form-control" name="Deck_Description" id="descripcionDeck" rows="4" placeholder="Ingresa una descripcion"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Continuar</button>
+        <button class="btn btn-primary btn-rounded btn-block waves-effect waves-light mx-auto" id="btnCreate" type="submit">
+            Continuar <i class="fas fa-sign-in-alt ml-1"></i>
+        </button>
     </form>
 </div>
