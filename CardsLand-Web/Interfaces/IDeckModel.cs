@@ -6,8 +6,10 @@ namespace CardsLand_Web.Interfaces
     {
         Task<ApiResponse<List<DeckEnt>>> GetAllUserDecks(long userId);
         Task<ApiResponse<DeckEnt>> GetSpecificDeck(long deckId);
-
-        Task<ApiResponse<DeckEnt>> EditDeck(long deckId);
+        Task<ApiResponse<DeckEnt>> EditDeckValues(DeckEnt entity);
         Task<ApiResponse<List<CardEnt>>> GetCardsFromDeck(long deckId);
+        Task<ApiResponse<DeckEnt>> CreateDeck(DeckEnt entity);
+        Task<ApiResponse<CardDeckEnt>> AddCardToDeck(CardDeckEnt entity);
+
     }
 }

@@ -3,31 +3,41 @@
     ViewData["Title"] = "MisMazos";
 }
 
-<h1>MisMazos</h1>
-
-<body>
-
-
-    @foreach (var data in Model)
-    {
-        <div class="card mb-3 w-100" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="@data.Deck_Background_Image" class="img-fluid rounded-start h-100" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">@data.Deck_Name</h5>
-                        <p class="card-text">@data.Deck_Description</p>
-                        <br/>
-                        <a href="@Url.Action("EditDeck", "Deck", new { DeckId = @data.Deck_Id })" class="btn btn-primary">Editar Mazo</a>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h5>Mis Mazos</h5>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="bg-primary text-white p-2 rounded">
+                <a href="@Url.Action("CreateDeck", "Deck")">Crear nuevo mazo</a>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        @foreach (var data in Model)
+        {
+            <div class="card mb-3 w-100" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="@data.Deck_Background_Image" class="img-fluid rounded-start h-100" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">@data.Deck_Name</h5>
+                            <p class="card-text">@data.Deck_Description</p>
+                            <br />
+                            <a href="@Url.Action("EditDeck", "Deck", new { DeckId = @data.Deck_Id })" class="btn btn-primary">Editar Mazo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        }
+    </div>
+</div>
 
 
 
-    }
-
-</body>
+<!-- Scripts de Bootstrap 5 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -103,7 +103,7 @@
                             <a href="@Url.Action("GetAllCards", "PokemonTcg")" class="nav-link">Cartas</a>
                         </li>
                         <li class="nav-item">
-                            <a href="project.html" class="nav-link">Decks</a>
+                            <a href="@Url.Action("MisMazos", "Deck")" class="nav-link">Decks</a>
                         </li>
                         <li class="nav-item dropdown">
                             @if (Context.Session.GetString("UserNickname") != null)

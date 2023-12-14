@@ -3,6 +3,7 @@ using CardsLand_Web.Entities;
 using CardsLand_Web.Interfaces;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
+using static Dapper.SqlMapper;
 
 namespace CardsLand_Web.Models
 {
@@ -89,11 +90,6 @@ namespace CardsLand_Web.Models
             }
         }
 
-        public Task<ApiResponse<DeckEnt>> EditDeck(long deckId)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<ApiResponse<List<CardEnt>>> GetCardsFromDeck(long deckId)
         {
             ApiResponse<List<CardEnt>> response = new ApiResponse<List<CardEnt>>();
@@ -113,10 +109,12 @@ namespace CardsLand_Web.Models
                     foreach (var item in response.Data) 
                     {
                         CardEnt cardEnt = new CardEnt();
-                        cardEnt = await _pokeTcg.GetSpecificCardbyId(item.Id);
+                        cardEnt = await _pokeTcg.GetSpecificCardbyId(item.Card_Id);
+                        cardEnt.Card_Quantity = item.Card_Quantity;
                         cards.Add(cardEnt);
                     }
                     response.Data = cards;
+                    response.Success = true;
                     return response;
                 }
 
@@ -128,6 +126,102 @@ namespace CardsLand_Web.Models
             {
                 response.ErrorMessage = "Unexpected Error: " + ex.Message;
                 response.Code = 500;
+                return response;
+            }
+        }
+
+        public async Task<ApiResponse<DeckEnt>> CreateDeck(DeckEnt entity)
+        {
+            ApiResponse<DeckEnt> response = new ApiResponse<DeckEnt>();
+
+            try
+            {
+                entity.Deck_User_Id = long.Parse(_HttpContextAccessor.HttpContext.Session.GetString("UserId"));
+
+                string url = _urlApi + "/api/Deck/CreateDeck";
+                string token = _HttpContextAccessor.HttpContext.Session.GetString("UserToken");
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                JsonContent obj = JsonContent.Create(entity);
+                var httpResponse = await _httpClient.PostAsync(url, obj);
+
+                if (httpResponse.IsSuccessStatusCode)
+                {
+                    response.Success = true;
+                    response = await httpResponse.Content.ReadFromJsonAsync<ApiResponse<DeckEnt>>();
+                    return response;
+                }
+                else
+                {
+                    response.ErrorMessage = "Error al crear mazo. Verifique los datos.";
+                    return response;
+                }
+            }
+            catch (Exception ex)
+            {
+                response.ErrorMessage = "Error inesperado al crear mazo: " + ex.Message;
+                return response;
+            }
+        }
+
+        public async Task<ApiResponse<CardDeckEnt>> AddCardToDeck(CardDeckEnt entity)
+        {
+            ApiResponse<CardDeckEnt> response = new ApiResponse<CardDeckEnt>();
+            try
+            {
+                string url = _urlApi + "/api/Deck/AddCardToDeck";
+                string token = _HttpContextAccessor.HttpContext.Session.GetString("UserToken");
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                JsonContent obj = JsonContent.Create(entity);
+                var httpResponse = await _httpClient.PostAsync(url, obj);
+
+                if (httpResponse.IsSuccessStatusCode)
+                {
+                    response.Success = true;
+                    response = await httpResponse.Content.ReadFromJsonAsync<ApiResponse<CardDeckEnt>>();
+                    return response;
+                }
+                else
+                {
+                    response.ErrorMessage = "Error al agregar carta. Verifique los datos.";
+                    return response;
+                }
+            }
+            catch (Exception ex)
+            {
+                response.ErrorMessage = "Error inesperado al crear mazo: " + ex.Message;
+                return response;
+            }
+        }
+
+        public async Task<ApiResponse<DeckEnt>> EditDeckValues(DeckEnt entity)
+        {
+            ApiResponse<DeckEnt> response = new ApiResponse<DeckEnt>();
+            try
+            {
+                string url = _urlApi + "/api/Deck/EditDeckValues";
+                string token = _HttpContextAccessor.HttpContext.Session.GetString("UserToken");
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                JsonContent obj = JsonContent.Create(entity);
+                var httpResponse = await _httpClient.PutAsync(url, obj);
+
+                if (httpResponse.IsSuccessStatusCode)
+                {
+                    response.Success = true;
+                    response = await httpResponse.Content.ReadFromJsonAsync<ApiResponse<DeckEnt>>();
+                    return response;
+                }
+                else
+                {
+                    response.ErrorMessage = "Error al editar mazo. Verifique los datos.";
+                    return response;
+                }
+            }
+            catch (Exception ex)
+            {
+                response.ErrorMessage = "Error al editar mazo: " + ex.Message;
                 return response;
             }
         }
