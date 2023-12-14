@@ -4,6 +4,7 @@ using CardsLand_Web.Interfaces;
 using CardsLand_Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
+using static Dapper.SqlMapper;
 
 namespace CardsLand_Web.Controllers
 {
@@ -122,8 +123,6 @@ namespace CardsLand_Web.Controllers
             return RedirectToAction("EditDeck", new { deckId = entity.Deck.Deck_Id });
         }
 
-
-
         [HttpGet]
         public IActionResult CreateDeck()
         {
@@ -195,5 +194,52 @@ namespace CardsLand_Web.Controllers
             }
         }
 
+        [HttpPost]
+        public async Task<IActionResult> DeleteDeck(long deckId)
+        {
+            try
+            {
+                var response = await _deckModel.DeleteDeck(deckId);
+
+                if (response.Success)
+                {
+                    return RedirectToAction("MisMazos", "Deck");
+                }
+                else
+                {
+                    ViewBag.MensajePantalla = "No se pudo eliminar el mazo";
+                    return View();
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.MensajePantalla = "Error con el servidor";
+                return View();
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteCardFromDeck(long deckId, string cardId)
+        {
+            try
+            {
+                var response = await _deckModel.DeleteCardFromDeck(deckId, cardId);
+
+                if (response.Success)
+                {
+                    return RedirectToAction("EditDeck", "Deck", new { deckId = deckId });
+                }
+                else
+                {
+                    ViewBag.MensajePantalla = "No se pudo eliminar la carta";
+                    return RedirectToAction("EditDeck", "Deck", new { deckId = deckId });
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.MensajePantalla = "Error con el servidor";
+                return View();
+            }
+        }
     }
 }

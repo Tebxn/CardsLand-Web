@@ -15,9 +15,8 @@
                 </h1>
             </div>
             <div class="col-md-4 text-center">
-               
             </div>
-         
+
         </div>
 
         <div class="row justify-content-center">
@@ -29,12 +28,47 @@
         <div class="row justify-content-center mt-3">
             @foreach (var data in Model)
             {
-                <div class="card mb-3" style="max-width: 500px; margin: 10px; border: 1px solid #e2e2e2; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-image: url(' /template/img/colorfondo3.jpg'); background-size: cover;">
+                <div class="card mb-3" style="max-width: 500px; margin: 10px; border: 1px solid #e2e2e2; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-image: url('/template/img/colorfondo3.jpg'); background-size: cover;">
                     <div class="row g-0">
                         <div class="col-md-6">
-                            <img src="@data.Deck_Background_Image" class="img-fluid rounded-start h-90" style="margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" alt="..." >
+                            <img src="@data.Deck_Background_Image" class="img-fluid rounded-start h-90" style="margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" alt="...">
                         </div>
                         <div class="col-md-6">
+                            @* DELETE BUTTON *@
+                            <div class="card-body text-end">
+
+                                @* <button type="submit" style="border: none; background-color: transparent; cursor: pointer;">
+                            </button> *@
+                                <button type="button" style="border: none; background-color: transparent; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#detailsModal-@data.Deck_Id">
+                                    <i class="far fa-trash-alt" style="color: darkred"></i>
+                                </button>
+
+                                <!-- MODAL 1-->
+                                <div class="modal fade" id="detailsModal-@data.Deck_Id" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content text-center">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="detailsModalLabel">Eliminar Mazo</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>¿Seguro que desea eliminar el deck?</h5>
+                                                <p>*Está acción no es reversible</p>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <form asp-action="DeleteDeck" asp-controller="Deck" method="post" class="form-horizontal m-t-30">
+                                                    <input type="hidden" name="deckId" value="@data.Deck_Id" />
+                                                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ... -->
+
+                            </div>
+                            @* END DELETE BUTTON *@
                             <div class="card-body text-center">
                                 <h5 class="card-title">@data.Deck_Name</h5>
                                 <p class="card-text">@data.Deck_Description</p>
@@ -45,6 +79,7 @@
                     </div>
                 </div>
             }
+
         </div>
 
     </div>

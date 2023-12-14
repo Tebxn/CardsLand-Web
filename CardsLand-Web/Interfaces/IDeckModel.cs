@@ -10,6 +10,9 @@ namespace CardsLand_Web.Interfaces
         Task<ApiResponse<List<CardEnt>>> GetCardsFromDeck(long deckId);
         Task<ApiResponse<DeckEnt>> CreateDeck(DeckEnt entity);
         Task<ApiResponse<CardDeckEnt>> AddCardToDeck(CardDeckEnt entity);
+        Task<ApiResponse<DeckEnt>> DeleteDeck(long deckId);
+        Task<ApiResponse<DeckEnt>> DeleteCardFromDeck(long deckId, string cardId);
+
 
     }
 }
