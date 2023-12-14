@@ -77,8 +77,8 @@ namespace CardsLand_Web.Controllers
         }
 
         [HttpGet]
-        [SecurityFilter]
-        [SecurityFilterIsAdmin]
+        //[SecurityFilter]
+        //[SecurityFilterIsAdmin]
         public async Task<IActionResult> GetSpecificUser(long userId)
         {
             try
@@ -142,19 +142,72 @@ namespace CardsLand_Web.Controllers
             }
         }
 
+        [HttpGet]
+        [SecurityFilter]
+        public async Task<IActionResult> EditSpecificProfile(long userId)
+        {
+            try
+            {
+                var apiResponse = await _userModel.GetSpecificUser(userId);
+                if (apiResponse.Success)
+                {
+                    var user = apiResponse.Data;
+                    if (user != null)
+                    {
 
+                        return View("EditSpecificUser", user);
+                    }
+                    else
+                    {
+                        ViewBag.MensajePantalla = apiResponse.ErrorMessage;
+                        return View("GetProfile");
+                    }
+                }
+                else
+                {
+                    ViewBag.MensajePantalla = apiResponse.ErrorMessage;
+                    return View();
+                }
+            }
+            catch (Exception ex)
+            {
+                return View();
+            }
+        }
+
+
+
+        //[HttpPost]
+        ////[SecurityFilter]
+        ////[SecurityFilterIsAdmin]
+        //public async Task<IActionResult> EditSpecificUser(UserEnt user)
+        //{
+        //    var apiResponse = await _userModel.EditSpecificUser(user);
+
+        //    if (apiResponse.Success)
+        //    {
+        //        var editedUser = apiResponse.Data;
+        //        return RedirectToAction("GetAllUsers", "User");
+        //    }
+        //    else
+        //    {
+        //        ViewBag.MensajePantalla = apiResponse.ErrorMessage;
+        //        return View();
+        //    }
+        //}
 
         [HttpPost]
-        [SecurityFilter]
-        [SecurityFilterIsAdmin]
         public async Task<IActionResult> EditSpecificUser(UserEnt user)
         {
             var apiResponse = await _userModel.EditSpecificUser(user);
 
             if (apiResponse.Success)
             {
-                var editedUser = apiResponse.Data;
-                return RedirectToAction("GetAllUsers", "User");
+                // Obtener el valor de la variable de sesión UserIsAdmin
+                bool isAdmin = HttpContext.Session.GetString("UserIsAdmin") == "True";
+
+                // Redirigir a la vista correspondiente
+                return RedirectToAction(isAdmin ? "GetAllUsers" : "GetProfile", "User");
             }
             else
             {

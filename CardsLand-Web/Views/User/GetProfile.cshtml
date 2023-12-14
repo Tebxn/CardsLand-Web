@@ -3,38 +3,38 @@
     ViewData["Title"] = "GetProfile";
 }
 
-<body style="margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-image: url('/template/img/PokemonFondo10.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+<body style="margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-image: url('/template/img/Pokemon-hd2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 
     <div style="flex: 1;">
         <section class="ftco-section">
             <div class="container">
                 <br />
                 <div class="row justify-content-center">
-
+                    
                     <div class="col-md-4 text-center mb-5" style="background-color: rgba(255, 255, 255, 0.6); padding: 10px; border-radius: 10px;">
                             <h2 class="heading-section">PokeTrainer</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 mx-auto text-center" style="background-color: rgba(255, 255, 255, 0.5); padding: 10px; border-radius: 10px; margin-bottom: 20px;">
+                    <div class="col-md-6 mx-auto text-center" style="background-color: rgba(255, 255, 255, 0.6); padding: 10px; border-radius: 10px; margin-bottom: 20px;">
                         <h5 class="font-18 text-center">Mi usuario</h5>
 
                         <form class="pt-3">
                             <input type="hidden" name="UserToken" value="@ViewBag.UserToken" />
 
                             <div class="mb-3">
-                                <label class="small mb-1" for="inputUsername">User_Name</label>
+                                <label class="small mb-1" for="inputUsername">Nickname</label>
                                 <p>@Model.User_Nickname</p>
                             </div>
 
                             <div class="mb-3">
-                                <label class="small mb-1" for="inputUser_Email">User_Email</label>
+                                <label class="small mb-1" for="inputUser_Email">Correo Electrónico</label>
                                 <p>@Model.User_Email</p>
                             </div>
 
                             <div class="mb-3">
-                                <a href="@Url.Action("EditSpecificCustomer", "User", new { UserId = Model.User_Id })" class="btn btn-sm btn-primary">
-                                    <span style="color: black;">Editar Usuario</span>
+                                <a href="@Url.Action("EditSpecificProfile", "User", new { UserId = Model.User_Id })" class="btn btn-sm btn-primary">
+                                    <span style="">Editar Usuario</span>
                                     <i class="fa fa-pencil"></i>
                                 </a>
                             </div>

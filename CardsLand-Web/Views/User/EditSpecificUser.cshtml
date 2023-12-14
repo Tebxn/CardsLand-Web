@@ -9,6 +9,7 @@
     <div style="flex: 1;">
         <section class="ftco-section">
             <div class="container">
+                <br />
                 <div class="row justify-content-center">
                     <div class="col-md-4 text-center mb-5" style="background-color: rgba(255, 255, 255, 0.6); padding: 10px; border-radius: 10px;">
                         <h2 class="heading-section">PokeTrainers</h2>
@@ -42,7 +43,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group" style="@(Context.Session.GetString("UserIsAdmin") == "True" ? "" : "display: none;")">
                                         <div class="col-6 mx-auto">
                                             <label style="color: black;">Rol</label>
                                             <select asp-for="User_IsAdmin" class="form-control form-control-lg">
@@ -51,6 +52,7 @@
                                             </select>
                                         </div>
                                     </div>
+
                                     <br>
                                     <div class="form-group text-center m-t-20">
                                         <div class="col-md-6 mx-auto">

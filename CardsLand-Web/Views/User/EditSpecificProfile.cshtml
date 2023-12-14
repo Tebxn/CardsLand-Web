@@ -7,11 +7,11 @@
 
     <div style="flex: 1;">
         <section class="ftco-section">
+            <br />
             <div class="container">
-                <br />
                 <div class="row justify-content-center">
                     <div class="col-md-4 text-center mb-5" style="background-color: rgba(255, 255, 255, 0.6); padding: 10px; border-radius: 10px;">
-                        <h2 class="heading-section">PokeTrainers</h2>
+                        <h2 class="heading-section">PokeTrainer</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -41,15 +41,13 @@
                                             <input asp-for="User_Email" class="form-control form-control-lg" readonly />
                                         </div>
                                     </div>
-                                    @if (bool.TryParse(Context.Session.GetString("UserIsAdmin"), out var isAdmin) && isAdmin)
-                                    {
-                                        <div class="form-group" style="display: none;">
-                                            <div class="col-6 mx-auto">
-                                                <label style="color: black;">Rol</label>
-                                                <input asp-for="User_IsAdmin" class="form-control form-control-lg" readonly />
-                                            </div>
+                                    <div class="form-group" style="@(Context.Session.GetString("UserIsAdmin") == "True" ? "" : "display: none;")">
+                                        <div class="col-6 mx-auto">
+                                            <label style="color: black;">Rol</label>
+                                            <input asp-for="User_IsAdmin" class="form-control form-control-lg" readonly />
                                         </div>
-                                    }
+                                    </div>
+
                                     <br>
                                     <div class="form-group text-center m-t-20">
                                         <div class="col-md-6 mx-auto">
